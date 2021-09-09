@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:80%;
+    margin: 0 auto;
+}
+
+#logo {
+    max-width: 150px;
+}
+#logoname{
+    font-size: 250%;
+}
+
+#logoarea{
+    display:flex;
+    align-items: center;
+}
+
+.globalnav {
+    text-align: end;
+    position:sticky;
+    top: 0;
+    background-color: white;
+    padding:0.5%;
+}
+
+.globalnav ul{
+    margin-right:0;
+}
+
+.globalnav li{
+    margin:4%;
+    list-style: none;
+    display: inline;
+}
+.globalnav a {
+    text-decoration: none;
+    color: black;
+}
+.globalnav a:hover {
+    text-decoration: underline;
+}
+
+.globalnav a:visited {
+    color: blue;
+}
+
+#headline {
+    border-style: solid;
+    background-image: url("bilder/savanna.jpg");
+}

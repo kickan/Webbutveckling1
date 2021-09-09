@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <title>Moment 2</title>
+</head>
+
+<body>
+    <header>
+        <div id="logoarea">
+            <a href="index.html"><img id="logo" src="bilder/logo.png" alt="logga" title="Startsida"></a>
+            <h1 id="logoname">Lion</h1>
+        </div>
+    </header>
+    <nav class="globalnav">
+        <ul>
+            <li><a href="courses.html">Kurser</a></li>
+            <li><a href="pictures.html">Bilder</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="about.html">Om</a></li>
+        </ul>
+    </nav>
+    <hr />
+    <section>
+        <h2>Kontakt</h2>
+        <p>Kontakta mig via nedan kontaktformulär eller via e-post.</p>
+
+        <form>
+            <fieldset>
+                <legend>Kontaktformulär</legend>
+                <p>
+                    <label>
+                        Namn:
+                        <input type="text" placeholder="Förnamn Efternamn" name="fullname" />
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        E-postadress:
+                        <input type="email" placeholder="namn@domän.se" name="email" />
+                    </label>
+                </p>
+                <p>Yrke:
+                    <select name="occupation">
+                        <option value="webbutvecklare">Webbutvecklare</option>
+                        <option value="webbdesigner">Webbdesigner</option>
+                        <option value="projektledare">Projektledare</option>
+                        <option value="testare">Testare</option>
+                        <option value="testledare">Testledare</option>
+                    </select>
+                </p>
+                <p>
+                    <label>
+                        Nyhetsbrev:
+                        <input type="checkbox" name="newsletter" value="yes">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Anställd:
+                    </label>
+                    <input id="employed" type="radio" name="employed" value="yes" checked="checked" />
+                    <label for="employed">Ja</label>
+                    <input id="unemployed" type="radio" name="employed" value="yes" />
+                    <label for="unemployed">Nej</label>
+                </p>
+                <p>
+                    <label>
+                        Meddelande:
+                    </label>
+                    <br />
+                    <textarea name="message" cols="30" rows="4">
+                </textarea>
+                </p>
+                <input type="submit" name="send" value="Skicka" />
+                <input type="reset" name="reset" value="Nollställ" />
+            </fieldset>
+        </form>
+    </section>
+    <hr />
+    <footer>
+        <ul>
+            <li>DT057G Webbutveckling 1</li>
+            <li>2021-09-06</li>
+            <li>Kristina Abrahamsson</li>
+            <li><a href="mailto:krab2100@student.miun.se">krab2100@student.miun.se</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
