@@ -1,44 +1,55 @@
 @charset "utf-8";
+/* Allmän design för body */
 
-body{
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width:80%;
+    width: 80%;
     margin: 0 auto;
 }
+
+/* Design av logga och rubrik*/
 
 #logo {
     max-width: 150px;
 }
-#logoname{
+
+#logoname {
     font-size: 250%;
 }
 
-#logoarea{
-    display:flex;
+#logoarea {
+    display: flex;
     align-items: center;
 }
 
+/*Design av globala navigeringen och länkar */
+
 .globalnav {
     text-align: end;
-    position:sticky;
+    position: sticky;
+    z-index: 1;
     top: 0;
     background-color: white;
-    padding:0.5%;
+    padding: 0.5%;
+    border-bottom-style: solid;
+    border-width: 1px;
 }
 
-.globalnav ul{
-    margin-right:0;
+.globalnav ul {
+    margin-right: 0;
 }
 
-.globalnav li{
-    margin:4%;
+.globalnav li {
+    margin: 4%;
     list-style: none;
     display: inline;
 }
+
 .globalnav a {
     text-decoration: none;
     color: black;
 }
+
 .globalnav a:hover {
     text-decoration: underline;
 }
@@ -47,7 +58,125 @@ body{
     color: blue;
 }
 
-#headline {
-    border-style: solid;
-    background-image: url("bilder/savanna.jpg");
+.currentpage a {
+    color: grey !important;
 }
+
+/* Design för sidfot */
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 2%;
+}
+
+/* Design av rubrik för vardera sida */
+
+#headlinearea {
+    padding: 10%;
+    background-image: url("../bilder/savanna.jpg");
+    background-position: center;
+}
+
+#headline {
+    font-size: 200%;
+    position: relative;
+    width: 60%;
+    left: 60%;
+    letter-spacing: 1px;
+}
+
+/* Design specifik för index.html */
+
+.news {
+    position: relative;
+    height: 25em;
+}
+
+.newstext {
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    left: 25%
+}
+
+/*Design specifik för about.html */
+
+#about {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#about img {
+    float: left;
+    margin-right: 5%;
+}
+
+#about p {
+    width: 75%;
+}
+
+#about::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Design specifik för pictures(2-3).html */
+
+.album {
+    width: 90%;
+    margin: auto;
+}
+
+/*lokala navigeringen i pictures.html*/
+
+.localNavAlbum {
+    float: left;
+    width: 20%;
+    border-style: dashed;
+    border-width: 2px;
+    background-color: lightgray;
+    position: sticky;
+    top: 11%;
+    margin-top: 5%;
+}
+
+.localNavAlbum ul {
+    padding: 0;
+    text-align: center;
+}
+
+.localNavAlbum li {
+    list-style: none;
+    padding: 20%;
+}
+
+.localNavAlbum a {
+    text-decoration: none;
+    color: black;
+}
+
+.localNavAlbum a:hover {
+    text-decoration: underline;
+}
+
+.localNavAlbum a:visited {
+    color: blue;
+}
+
+.albumheadline {
+    text-align: center;
+}
+
+.albumPics {
+    float: right;
+}
+
+.album::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Design specifik för contact.html */

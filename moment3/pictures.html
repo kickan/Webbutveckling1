@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <title>Moment 2</title>
+    <title>Moment 3</title>
 </head>
 
 <body>
@@ -19,25 +19,29 @@
     <nav class="globalnav">
         <ul>
             <li><a href="courses.html">Kurser</a></li>
-            <li><a href="pictures.html">Bilder</a></li>
+            <li class="currentpage"><a href="pictures.html">Bilder</a></li>
             <li><a href="contact.html">Kontakt</a></li>
             <li><a href="about.html">Om</a></li>
         </ul>
     </nav>
-    <hr />
-    <section>
-        <ul>
-            <li><a href="pictures1.html">Bilder 1</a></li>
-            <li><a href="pictures2.html">Bilder 2</a></li>
-            <li><a href="pictures3.html">Bilder 3</a></li>
-        </ul>
-    </section>
-    <section>
-        <h2>Det är kul med programmering!</h2>
-        <img src="bilder/album/prog_lightbulb.jpg" alt="En hand håller upp en glödlampa">
-        <img src="bilder/album/prog_code.jpg" alt="Bild på programmeringskod">
-        <br />
-        <img src="bilder/album/prog_computer.jpg" alt="Bild på en dator">
+    <div id="headlinearea">
+        <h2 id="headline">Bilder</h2>
+    </div>
+    <section class="album">
+        <div class="localNavAlbum">
+            <ul>
+                <li class="currentpage"><a href="pictures.html">Programmering</a></li>
+                <li><a href="pictures2.html">Stickning</a></li>
+                <li><a href="pictures3.html">Naturen</a></li>
+            </ul>
+        </div>
+        <h2 class="albumheadline">Det är kul med programmering!</h2>
+        <div class="albumPics">
+            <img src="bilder/album/prog_lightbulb.jpg" alt="En hand håller upp en glödlampa">
+            <img src="bilder/album/prog_code.jpg" alt="Bild på programmeringskod">
+            <br />
+            <img src="bilder/album/prog_computer.jpg" alt="Bild på en dator">
+        </div>
     </section>
     <hr />
     <footer>

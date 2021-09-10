@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <title>Moment 2</title>
+    <title>Moment 3</title>
 </head>
 
 <body>
@@ -19,18 +19,29 @@
     <nav class="globalnav">
         <ul>
             <li><a href="courses.html">Kurser</a></li>
-            <li><a href="pictures.html">Bilder</a></li>
+            <li class="currentpage"><a href="pictures.html">Bilder</a></li>
             <li><a href="contact.html">Kontakt</a></li>
             <li><a href="about.html">Om</a></li>
         </ul>
     </nav>
-    <hr />
-    <section>
-        <h2>Det är väldigt härligt att vara ute i naturen</h2>
-        <img src="bilder/album/nature_forest.jpg" alt="Bild på en skog med berg i bakgrunden">
-        <br />
-        <img src="bilder/album/nature_flowers.jpg" alt="Bild på en äng med blommor">
-        <img src="bilder/album/nature_walking.jpg" alt="Bild på en kvinna som går i skogen">
+    <div id="headlinearea">
+        <h2 id="headline">Bilder</h2>
+    </div>
+    <section class="album">
+        <div class="localNavAlbum">
+            <ul>
+                <li><a href="pictures.html">Programmering</a></li>
+                <li><a href="pictures2.html">Stickning</a></li>
+                <li class="currentpage"><a href="pictures3.html">Naturen</a></li>
+            </ul>
+        </div>
+        <h2 class="albumheadline">Det är härligt med naturen</h2>
+        <div class="albumPics">
+            <img src="bilder/album/nature_forest.jpg" alt="Bild på en skog med berg i bakgrunden">
+            <br />
+            <img src="bilder/album/nature_flowers.jpg" alt="Bild på en äng med blommor">
+            <img src="bilder/album/nature_walking.jpg" alt="Bild på en kvinna som går i skogen">
+        </div>
     </section>
     <hr />
     <footer>

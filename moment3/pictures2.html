@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <title>Moment 2</title>
+    <title>Moment 3</title>
 </head>
 
 <body>
@@ -19,18 +19,29 @@
     <nav class="globalnav">
         <ul>
             <li><a href="courses.html">Kurser</a></li>
-            <li><a href="pictures.html">Bilder</a></li>
+            <li class="currentpage"><a href="pictures.html">Bilder</a></li>
             <li><a href="contact.html">Kontakt</a></li>
             <li><a href="about.html">Om</a></li>
         </ul>
     </nav>
-    <hr />
-    <section>
-        <h2>Jag tycker också om att sticka</h2>
-        <img src="bilder/album/knit_knitting.jpg" alt="Någon sitter och stickar">
-        <img src="bilder/album/knit_tea.jpg" alt="Bild på en kopp te i ett fönster">
-        <br />
-        <img src="bilder/album/knit_yarn.jpg" alt="bild på garn som ligger på en stol">
+    <div id="headlinearea">
+        <h2 id="headline">Bilder</h2>
+    </div>
+    <section class="album">
+        <div class="localNavAlbum">
+            <ul>
+                <li><a href="pictures.html">Programmering</a></li>
+                <li class="currentpage"><a href="pictures2.html">Stickning</a></li>
+                <li><a href="pictures3.html">Naturen</a></li>
+            </ul>
+        </div>
+        <h2 class="albumheadline">Jag tycker också om att sticka</h2>
+        <div class="albumPics">
+            <img src="bilder/album/knit_knitting.jpg" alt="Någon sitter och stickar">
+            <img src="bilder/album/knit_tea.jpg" alt="Bild på en kopp te i ett fönster">
+            <br />
+            <img src="bilder/album/knit_yarn.jpg" alt="bild på garn som ligger på en stol">
+        </div>
     </section>
     <hr />
     <footer>
