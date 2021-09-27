@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* Mobile-first */
+
+/* Sätter bakgrundsfärgen på sidan */
+
+html {
+    background-color: #ccc;
+}
+
+/* Specificerar mittenplattan */
+
+body {
+    margin: 10px;
+    padding: 40px;
+    max-width: 960px;
+    background-color: #fff;
+}
+
+/* Specificerar rubriker och brödtext */
+
+h1, h2, h3 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #854242;
+}
+
+p {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #000;
+}
+
+/* Centrerar element i header */
+
+header {
+    text-align: center;
+}
+
+/* Specificerar sökrutan */
+
+#search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #854242;
+}
+
+/* Specificerar input-ruta och sök-knapp */
+
+#searchinput {
+    width: 60%;
+}
+
+#searchbtn {
+    width: 35%;
+}
+
+/* Specificerar bakgrundsbild, börjar med en mobil-version */
+
+#coverimg {
+    background-image: url(../img/header_mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 0;
+    padding-top: 29.29%;
+    /* Hittade denna lösning på nätet där man delar img-height med img-width 
+    för att få padding-top. Detta gör att div-elementet får en höjd 
+    anpassad efter background-img. */
+}
+
+/* Döljer navigeringen i form av lista */
+
+#globnav-list {
+    display: none;
+}
+
+/* Visar navigering i form av drop-down */
+
+#globnav-dropdown {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Specificerar box-fotnoter samt fotnot för sida */
+
+.boxfooter {
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #854242;
+}
+
+.boxfooter p {
+    color: #fff;
+}
+
+footer {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #999999;
+}
+
+/* Brytpunkt för skärmar större än 500px */
+
+@media all and (min-width: 500px) {
+    /* Placerar om sökfältet */
+    #search {
+        position: static;
+    }
+    /* Byter bakgrundsbild till större upplösning */
+    #coverimg {
+        background-image: url(../img/header_pad.jpg);
+    }
+    /* Döljer drop-down navigering */
+    #globnav-dropdown {
+        display: none;
+    }
+    /* Tar fram navigering i form av lista och specificerar design */
+    #globnav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        width: 60%;
+    }
+    #globnav-list li {
+        list-style: none;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 85%;
+    }
+    #globnav-list a {
+        text-decoration: none;
+        color: #666;
+        font-weight: 100;
+    }
+    #globnav-list a:hover {
+        text-decoration: underline;
+        color: black;
+    }
+    /* Skapar två kolumner för textboxarna */
+    #boxcontainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 40px;
+    }
+}
+
+/* Brytpunkt för skärmar större än 800px */
+
+@media all and (min-width: 800px) {
+    /* Ändrar bakgrundsbild till större upplösning */
+    #coverimg {
+        background-image: url(../img/header_desktop.jpg);
+    }
+    /* Sätter header till relative för att kunna flytta sök-fältet */
+    header {
+        position: relative;
+        border-bottom: 2px #854242 solid;
+    }
+    /* Placerar om sökfältet samt justerar utseende */
+    #search {
+        width: 20%;
+        padding: 0%;
+        background-color: unset;
+        position: absolute;
+        left: unset;
+        top: 75px;
+    }
+    #searchinput {
+        width: 70%;
+    }
+    #searchbtn {
+        width: 20%;
+    }
+}
+
+/* Lägger till en till brytpunkt för att behålla 10px marginal och sedan kunna centrera "mittenplattan" med margin auto */
+
+@media all and (min-width: 1060px) {
+    body {
+        margin: 10px auto;
+    }
+}
