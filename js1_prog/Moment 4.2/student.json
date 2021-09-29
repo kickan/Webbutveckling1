@@ -1,0 +1,37 @@
+{
+    "student": {
+        "information": {
+            "name": "Kristina Abrahamsson",
+            "email": "krab2100@student.min.se",
+            "city": "Uppsala",
+            "website": "https://modest-bose-aa97d3.netlify.app/"
+        },
+        "websites": [
+            {
+                "sitename": "Google",
+                "siteurl": "https://www.google.se/",
+                "description": "Search engine provided by Google"
+            },
+            {
+                "sitename": "Mittuniversitetet",
+                "siteurl": "https://www.miun.se/",
+                "description": "Website for Mid Sweden University"
+            },
+            {
+                "sitename": "Github",
+                "siteurl": "https://github.com/",
+                "description": "Development platform for developers"
+            },
+            {
+                "sitename": "Validator.nu",
+                "siteurl": "https://validator.nu/",
+                "description": "Validator for HTML"
+            },
+            {
+                "sitename": "ICA",
+                "siteurl": "https://www.ica.se/",
+                "description": "ICA's website"
+            }
+        ]
+    }
+}

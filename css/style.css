@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#216869;
+    padding: 40px;
+}
+
+#glob-nav{
+    width: 30%;
+}
+
+#nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nav-list li{
+    list-style: none;
+}
+
+.courses{
+    padding: 40px;
+    margin: 10px;
+    background-color: #549596;
+
+}
