@@ -13,7 +13,7 @@ function init() {
 window.addEventListener("load", init);
 
 function loadInfo(){
-    fetch("student.json")
+    fetch("https://modest-bose-aa97d3.netlify.app/js1_prog/Moment%204.2/student.json")
     .then(response => response.json())
     .then(info => {
         showInfo(info.student.information);
