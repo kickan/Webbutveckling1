@@ -39,7 +39,7 @@ window.onload = init;
 //call functions with data and add eventlisteners to elements. 
 function loadChannels() {
     //Set data URL for channels and request data
-    let url = "http://api.sr.se/api/v2/channels/?format=json&pagination=false&ondemandaudiotemplateid = 1";
+    let url = "https://api.sr.se/api/v2/channels/?format=json&pagination=false&ondemandaudiotemplateid = 1";
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) { //If succesful load
@@ -141,7 +141,7 @@ function styleInfo(channels) {
 //Load channel Tableau from SR using AJAX, then run function with data
 function loadTableau(channelId) {
     //get channel id from "this" element id to get proper URL
-    let url = "http://api.sr.se/v2/scheduledepisodes?channelid=" + channelId + "&format=json&pagination=false";
+    let url = "https://api.sr.se/v2/scheduledepisodes?channelid=" + channelId + "&format=json&pagination=false";
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) { //If succesful load
@@ -388,7 +388,7 @@ function loadData() {
 //Request categories from SR API
 function loadCat() {
     //Set url to request categories
-    let url = "http://api.sr.se/api/v2/programcategories?format=json&pagination=false";
+    let url = "https://api.sr.se/api/v2/programcategories?format=json&pagination=false";
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) { //If succesful load
@@ -450,7 +450,7 @@ function listCat(catObj) {
 
 //Request programs from specific category from SR
 function loadCatProg() {
-    let url = "http://api.sr.se/api/v2/programs/index?programcategoryid=" + this.id + "&format=json&pagination=false";
+    let url = "https://api.sr.se/api/v2/programs/index?programcategoryid=" + this.id + "&format=json&pagination=false";
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) { //If succesful load
