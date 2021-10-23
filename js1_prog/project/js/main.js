@@ -56,8 +56,6 @@ function loadChannels() {
             //Load categories from SR
             loadCat();
         }
-        //Catch request error
-        else { channelListEl.innerHTML = "Fel vid anrop till webbtjänst. Felkod: " + xhttp.status; }
     };
     xhttp.open('GET', url, true);
     xhttp.send();
@@ -461,8 +459,6 @@ function loadCatProg() {
             //run functions
             listCatProg(catProgObj.programs);
         }
-        //Catch request error
-        else { tableauEl.innerHTML = "Fel vid anrop till webbtjänst. Felkod: " + xhttp.status; }
     };
     xhttp.open('GET', url, true);
     xhttp.send();
