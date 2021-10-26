@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonts from google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <!--link to style sheet-->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <title>RAVA</title>
+</head>
+
+<body>
+    <!--Header with navigation links-->
+    <header>
+        <h1><a href="index.html">RAVA</a></h1>
+        <nav class="globnav">
+            <!--menuebtn only visable in mobile mode-->
+            <span id="menuebtn">Meny</span>
+            <ul class="navlst">
+                <li><a href="products.html">Produkter</a></li>
+                <li><a href="order.html">Beställa</a></li>
+                <li><a href="about.html">Om</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Section with cover img and text. img set as background-img in css-->
+    <section class="section1">
+        <div id="covertext">
+            <h2>Beställa</h2>
+        </div>
+    </section>
+
+    <!--Section for order form-->
+    <section class=formsection>
+        <form id="orderform">
+            <fieldset>
+                <h3>LÄGG EN BESTÄLLNING</h3>
+                <!--product list-->
+                <label for="product" id="prodlabel">Produkt: </label>
+                <select name="product" id="product" multiple>
+                    <option value="brush">Borste --- 300kr</option>
+                    <option value="schampoo">Schampoo --- 250kr</option>
+                    <option value="Oil">Olja --- 100kr</option>
+                    <option value="serum">Serum --- 150kr</option>
+                    <option value="startkit">Startkit --- 400kr</option>
+                </select> <br />
+                <!--customer information-->
+                <label for="name">Namn: </label><br />
+                <input type="text" id="name" name="name"><br />
+                <label for="email">Email: </label><br />
+                <input type="email" id="email" name="email"><br />
+                <label for="tel">Tel: </label><br />
+                <input type="text" id="tel" name="tel"><br />
+                <label for="newsletter">Nyhetsbrev: </label>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br />
+                <button type="button" id="orderbtn">Beställ</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!--content section-->
+    <section class="section3">
+        <p>För att ta hand om vår planet så producera vi våra produkter efter beställning. Om du vill köpa någon av våra
+            produkter så lägger du en beställning genom formuläret ovan och sedan kontaktar vi dig. Tack för att du
+            väljer RAVA.</p>
+    </section>
+    <!--Background img places behind order form-->
+    <img src="img/flowerssmall.png" alt="Rosa blommor på en kvist" class="backgroundimg bgimgorder" id="bgimg1">
+
+    <!--global footer-->
+    <footer>
+        <h3>RAVA</h3>
+        <ul id="footerlst">
+            <li>Mail: info@rava.se</li>
+            <li><a href="about.html">Om</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

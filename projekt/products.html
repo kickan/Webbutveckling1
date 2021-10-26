@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonts from google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <!--link to style sheet-->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <title>RAVA</title>
+</head>
+
+<body>
+    <!--Header with navigation links-->
+    <header>
+        <h1><a href="index.html">RAVA</a></h1>
+        <nav class="globnav">
+            <!--menuebtn only visable in mobile mode-->
+            <span id="menuebtn">Meny</span>
+            <ul class="navlst">
+                <li><a href="products.html">Produkter</a></li>
+                <li><a href="order.html">Beställa</a></li>
+                <li><a href="about.html">Om</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Section with cover img and text. img set as background-img in css-->
+    <section class="section1">
+        <div id="covertext">
+            <h2>Produkter</h2>
+        </div>
+    </section>
+
+    <!--several sections as product cards, has the same layout-->
+    <!--procuct card section-->
+    <section class="prodcard" id="prodcard1">
+        <h3>BORSTE</h3>
+        <div class="prodinfo">
+            <p class="prodtext">Denna borste i gran kommer från de svenska skogarna.Borstens borst är mjukt och tar väl
+                hand om dina spröda hårtoppar.</p>
+            <img src="img/brushsmall.jpg" alt="Bild på produkten borste" class="prodimg">
+        </div>
+        <button>Beställ</button>
+    </section>
+    <!--procuct card section-->
+    <section class="prodcard">
+        <h3>SCHAMPOO LILJA</h3>
+        <div class="prodinfo">
+            <p class="prodtext">Detta schampoo berikat med D-vitamin stärker ditt hår på djupet och ger extra glans.
+                Dess naturliga ingredienser kommer vårda ditt hår och ge det nytt liv.</p>
+            <img src="img/schampoosmall.jpg" alt="Bild på produkten schampoo" class="prodimg">
+        </div>
+        <button>Beställ</button>
+    </section>
+    <!--procuct card section-->
+    <section class="prodcard">
+        <h3>HÅROLJA</h3>
+        <div class="prodinfo">
+            <p class="prodtext">Vill du unna dig något extra så är denna olja perfekt för dig. Oljan är producerad med
+                tallbarr som är rika på nyttiga mineraler och vitaminer som stärker ditt hår.</p>
+            <img src="img/oilsmall.jpg" alt="Bild på produkten hårolja" class="prodimg">
+        </div>
+        <button>Beställ</button>
+    </section>
+    <!--procuct card section-->
+    <section class="prodcard">
+        <h3>SERUM</h3>
+        <div class="prodinfo">
+            <p class="prodtext">Detta serum kommer ge ditt hår en riktig boost! Serumet är fullproppat med vitaminer och
+                mineraler hämtat från den svenska naturen. Med dess kraftfulla innehåll ger det liv till det mest slitna
+                hår. </p>
+            <img src="img/serumsmall.jpg" alt="Bild på produkten serum" class="prodimg">
+        </div>
+        <button>Beställ</button>
+    </section>
+
+    <!--Backgroundimgs places behind product cards-->
+    <img src="img/flowerssmall.png" alt="Rosa blommor på en kvist" class="backgroundimg" id="bgimg1">
+    <img src="img/bladsmall.png" alt="En bladbuske" class="backgroundimg" id="bgimg2">
+
+    <!--global footer-->
+    <footer>
+        <h3>RAVA</h3>
+        <ul id="footerlst">
+            <li>Mail: info@rava.se</li>
+            <li><a href="about.html">Om</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
