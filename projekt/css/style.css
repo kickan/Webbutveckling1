@@ -184,6 +184,10 @@ footer {
     border-top: black solid 1px;
 }
 
+footer h1{
+    font-size: 1em;
+}
+
 #footerlst {
     list-style: none;
     display: flex;
@@ -364,7 +368,7 @@ footer {
         font-size: 1.5em;
     }
     /*---Footer---*/
-    footer {
+    footer, footer h1 {
         font-size: 1.3em;
     }
     /* Design specific for product page */
@@ -398,7 +402,7 @@ footer {
         max-width: 40%;
     }
     /*---Font size---*/
-    .navlst, p, footer, label {
+    .navlst, p, footer, label, footer h1 {
         font-size: 1.5em;
     }
     h3 {
