@@ -8,6 +8,11 @@
     padding: 0px;
 }
 
+html{
+    background-color: white;
+    color:black;
+}
+
 /*Design for all pages */
 
 body {
