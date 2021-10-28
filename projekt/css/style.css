@@ -141,7 +141,7 @@ header h1 a {
 }
 
 .section3 {
-    background-color: rgb(255, 246, 249);
+    background-color: rgb(252, 248, 249);
     text-align: center;
     padding: 3em;
     position: relative;
@@ -217,7 +217,7 @@ footer h2{
     width: 80%;
     margin: 0em auto 2em;
     padding: 2em;
-    background-color: rgba(255, 246, 249, 0.8);
+    background-color: rgba(252, 248, 249,0.8);
     border-radius: 2px;
 }
 
@@ -337,7 +337,7 @@ footer h2{
     width: 80%;
     margin: 0em auto 2em;
     padding: 2em;
-    background-color: rgba(255, 246, 249, 0.8);
+    background-color: rgba(252, 248, 249,0.8);
     border-radius: 2px;
 }
 
