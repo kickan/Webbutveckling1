@@ -141,7 +141,7 @@ header h1 a {
 }
 
 .section3 {
-    background-color: rgb(252, 248, 249);
+    background-color: rgba(252, 248, 249,0.8);
     text-align: center;
     padding: 3em;
     position: relative;
