@@ -1,0 +1,45 @@
+header {
+    text-align: center;
+}
+
+html {
+    background-color: #a5929e;
+}
+
+body {
+    max-width: 90%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1%;
+    border-radius: 10px;
+}
+
+source, img {
+    max-width: 100%;
+}
+
+section {
+    max-width: 1200px;
+    margin: 10% auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Montez', cursive;
+}
+
+.videodiv {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videodiv iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
