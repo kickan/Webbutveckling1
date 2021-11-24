@@ -89,7 +89,7 @@ header q {
     padding: 10%;
 }
 
-.contentimg picture {
+.contentimg img {
     max-width: 100%;
 }
 
@@ -125,7 +125,7 @@ header q {
 
 }
 
-.quote picture {
+.quote img {
     max-width: 100%;
 }
 
