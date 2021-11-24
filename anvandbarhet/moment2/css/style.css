@@ -1,6 +1,8 @@
 /*Normalize design*/
 
 @import url(normalize.css);
+
+/*Global settings*/
 html {
     font-size: 62.5%;
     background-color: white;
@@ -10,41 +12,160 @@ html {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Outfit', Helvetica, sans-serif;
 }
 
 body {
     margin: auto;
-
+    width: 80%;
+    max-width: 900px;
+    border: 1px solid black;
 }
 
-h1, h2, h3, h4 {
-}
-
+/*Font settings*/
 p, li {
     font-size: 1.6rem;
+    line-height: 2.5rem;
 }
 
 h1 {
     font-size: 3.2rem;
-
 }
 
 h2 {
     font-size: 2.4rem;
-
 }
 
 h3 {
     font-size: 1.872rem;
-
 }
 
 h4 {
     font-size: 1.6rem;
+}
+
+/*Header design */
+
+header {
+    padding: 10% 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    background-color: beige;
+}
+
+header h1 {
+    padding: 5% 0;
+}
+
+header q {
+    font-size: 1.872rem;
+    padding: 5% 0;
+    font-style: italic;
+}
+
+/*Column design*/
+
+.columncontent {
+    padding: 10%;
+}
+
+.columncontent h2 {
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.colums {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    align-items: center;
+}
+
+/*Design for sections with text and img*/
+
+.contentimg {
+    padding: 10%;
+}
+
+.contentimg img {
+    max-width: 100%;
+}
+
+.contentimg1 {
+    background-color: blanchedalmond;
+}
+
+.contentimg1 h3 {
+    margin-left: 52%;
+}
+
+/*Design for section with text in center*/
+
+.centertext {
+    padding: 10% 20% 10% 20%;
+}
+
+.contentlst {
+    padding: 10% 20%;
+    background-color: burlywood;
+}
+
+/*Design for quote*/
+
+.quote {
+    padding: 10%;
+    background-color: beige;
+}
+
+.quote q {
+    font-size: 1.872rem;
+    font-style: italic;
 
 }
 
-ul {
-    margin-left: 4rem;
+.quote img {
+    max-width: 100%;
 }
 
+/*Design for extra information*/
+
+.extrainfo {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.extrainfo section {
+    padding: 5% 10%;
+    text-align: left;
+}
+
+@media all and (max-width:800px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:550px) {
+    header {
+        padding: 10% 5%;
+    }
+
+    .colums {
+        display: block;
+    }
+
+    .colums p {
+        padding: 2% 0;
+    }
+
+    .contentimg1 h3 {
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
+
+    .centertext {
+        padding: 10% 0;
+    }
+}
