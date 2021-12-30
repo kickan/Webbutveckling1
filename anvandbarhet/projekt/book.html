@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boka resa</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <h1>Boka färdtjänst</h1>
+    <form>
+        <p>Vart vill du åka?</p>
+        <label for="from">Från: </label>
+        <input type="text" id="from">
+        <label for="to">Till: </label>
+        <input type="text" id="to"><br>
+
+        <label for="date">Datum: </label>
+        <label for="time">Tid: </label>
+        <input type="text" id="time"><br>
+        <input type="week" id="date"> <br>
+
+        <input type="checkbox" id="return">
+        <label for="return">Returresa</label><br>
+        <label for="datereturn">Datum: </label>
+        <label for="timereturn">Tid: </label>
+        <input type="text" id="timereturn"><br>
+        <input type="week" id="datereturn"><br>
+
+        <input type="checkbox" id="recur">
+        <label for="recur">Återkommande resa</label> <br>
+        <input type="radio" id="daily" name="recur_opt" value="Varje dag">
+        <label for="daily">Varje dag</label><br>
+        <input type="radio" id="weekday" name="recur_opt" value="Varje vardag (måndag till fredag)">
+        <label for="daily">Varje vardag (måndag till fredag)</label><br>
+        <input type="radio" id="weekly" name="recur_opt" value="Varje vecka, samma dag">
+        <label for="daily">Varje vecka, samma dag</label><br>
+        <input type="radio" id="monthly" name="recur_opt" value="Varje månad, samma dag">
+        <label for="daily">Varje månad, samma dag</label><br>
+        <input type="radio" id="cust" name="recur_opt" value="Anpassad">
+        <label for="daily">Anpassad</label>
+
+        <p>Övrig information</p><br>
+        <input type="checkbox" id="car" value="Egen bil önskas">
+        <label for="car">Egen bil önskas</label><br>
+        <input type="checkbox" id="copassenger" value="Medresenärer">
+        <label for="copassenger">Medresenärer</label>
+        <label for="numcopassenger">Antal: </label>
+        <select name="numcopassenger" id="numcopassenger">
+            <option value="1 medresenär">1 medresenär</option>
+            <option value="2 medresenärer">2 medresenärer</option>
+            <option value="3 medresenärer">3 medresenärer</option>
+            <option value="4 medresenärer">4 medresenärer</option>
+        </select><br>
+        <input type="checkbox" id="escort" value="Ledsagare">
+        <label for="escort">Ledsagare</label><br>
+        <input type="checkbox" id="wheelchair" value="Rullstolsanpassad bil">
+        <label for="wheelchair">Rullstolsanpassad bil</label><br>
+        <button type="button">Boka</button>
+    </form>
+    <footer>
+        
+    </footer>
+</body>
+</html>
