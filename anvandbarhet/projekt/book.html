@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boka resa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <title>Uppsala färdtjänst</title>
 </head>
+
 <body>
     <header>
-
+        <img src="img/logga.svg" alt="" class="logo">
+        <p class="desktop_content">Till huvudinnehåll</p>
+        <p class="desktop_content">Logga ut</p>
+        <button class="mobile_links" id="menuebtn">
+            Meny
+        </button>
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startsidan</a></li>
+            <li><a href="book.html">Boka färdtjänst</a></li>
+            <li><a href="about">Om</a></li>
+            <li><a href="bookings.html">Mina resor</a></li>
+            <li><a href="myprofile.html">Min profil</a></li>
+        </ul>
+    </nav>
     <h1>Boka färdtjänst</h1>
     <form>
         <p>Vart vill du åka?</p>
@@ -62,7 +83,8 @@
         <button type="button">Boka</button>
     </form>
     <footer>
-        
+
     </footer>
 </body>
+<script src="js/main.js"></script>
 </html>

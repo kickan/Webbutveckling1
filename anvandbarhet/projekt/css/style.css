@@ -1,0 +1,178 @@
+/*Normalize design*/
+
+@import url(normalize.css);
+
+/*Mobile first*/
+/*Global settings*/
+html{
+    font-size: 62.5%;
+    background-color: white;
+}
+
+*{
+    font-family: "source sans pro", sans-serif, Arial;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+/*Font settings*/
+p,li,button,a,label, input{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+h1{
+    font-size: 3.6rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size:2rem;
+}
+h4{
+    font-size: 1.8rem;
+}
+
+/*header design*/
+.desktop_content{
+    display: none;
+}
+
+
+header{
+    background-color: #262262;
+    color: #FFFFFF;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo{
+    width:100px;
+
+}
+
+#menuebtn{
+    color: white;
+    background-color: #262262;
+    border:none;
+}
+#menuebtn:hover{
+    cursor:pointer;
+}
+
+nav{
+    position: absolute;
+    background-color: #262262;
+    color: white;
+    width:100%;
+    height:100%;
+    transform: translateX(100%);
+    transition: transform 300ms cubic-bezier(.5, 0, .5, 1)
+}
+
+.nav-open nav{
+    transform: translateX(0);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+nav a{
+    color: #D4D1ED;
+}
+
+nav a:hover{
+    color:white;
+}
+/*headline design*/
+h1{
+    margin: 2rem;
+}
+
+/*Booking design index page*/
+#book_start{
+    background-color: #F4F3FF;
+    padding: 20px;
+    text-align: center;
+}
+
+/*News design index page*/
+#news_header{
+    margin:10% 15% 0;
+}
+.news{
+    background-color:#F4F3FF;
+    width:70%;
+    margin:3rem auto;
+    padding:4rem;
+}
+
+.news img{
+    display:flex;
+    margin:1rem auto;
+    width:100%;
+}
+.news_sec a{
+    margin-left: 15%;
+}
+
+/*button design*/
+.yellow_btn, .blue_btn{
+    border-radius: 0;
+    border:none;
+    padding:10px;
+    color: #202E45;
+}
+.yellow_btn:hover, .blue_btn:hover{
+    cursor:pointer;
+}
+
+.yellow_btn{
+    background-color:#FFDD00;
+}
+.yellow_btn:hover{
+    background-color:#ffe53b;
+}
+
+.blue_btn{
+    background-color: #D4D1ED;
+}
+.blue_btn:hover{
+    background-color: #b2afd7;
+}
+.right_btn{
+    text-align: right;
+}
+
+/*footer design*/
+footer{
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #262262;
+    color: #FFFFFF;
+}
+footer ul{
+    list-style: none;
+    margin-bottom: 3rem;
+}
+footer a, footer span{
+    color: #D4D1ED;
+}
+
+footer a:hover{
+    color: white;
+}

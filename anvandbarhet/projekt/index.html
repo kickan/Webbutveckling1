@@ -5,63 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
     <title>Uppsala färdtjänst</title>
 </head>
 
 <body>
     <header>
-        <img src="#" alt="">
-        <p>Till huvudinnehåll</p>
-        <p>Logga ut</p>
+        <img src="img/logga.svg" alt="" class="logo">
+        <p class="desktop_content">Till huvudinnehåll</p>
+        <p class="desktop_content">Logga ut</p>
+        <button class="mobile_links" id="menuebtn">
+            Meny
+        </button>
     </header>
     <nav>
         <ul>
-            <li>Startsidan</li>
-            <li>Boka färdtjänst</li>
-            <li>Om</li>
-        </ul>
-        <ul>
-            <li>Mina resor</li>
-            <li>Min profil</li>
+            <li><a href="index.html">Startsidan</a></li>
+            <li><a href="book.html">Boka färdtjänst</a></li>
+            <li><a href="about">Om</a></li>
+            <li><a href="bookings.html">Mina resor</a></li>
+            <li><a href="myprofile.html">Min profil</a></li>
         </ul>
     </nav>
     <h1>Välkommen till Uppsala färdtjänst</h1>
 
-    <section>
+    <section id="book_start">
         <h2>Boka färdtjänst</h2>
         <p>Vart vill du åka?</p>
-        <label for="from" name="from">Från: </label>
-        <input type="text" id="from">
-        <label for="to" name="to">Till: </label>
-        <input type="text" id="to">
-        <button>Nästa</button>
+        <label for="from-start" name="from-start">Från: </label>
+        <input type="text" id="from-start"><br class="mobile_content">
+        <label for="to-start" name="to-start">Till: </label>
+        <input type="text" id="to-start"><br>
+        <button class="yellow_btn" id="start-book-btn">Nästa</button>
     </section>
-    <section>
-        <h2>Nyheter</h2>
-        <article>
-            <img src="#" alt="">
+    <section class="news_sec">
+        <h2 id="news_header">Nyheter</h2>
+        <article class="news">
+            <img src="img/kompisar.jpg" alt="Två personer tittar ut i en kohage">
             <h3>Ensam i färdtjänstbilen</h3>
             <p>Om man vill åka ensam i färdtjänstbilen behöver man från och med 1 oktober år 2021 betala en avgift.</p>
-            <button>Läs mer</button>
+            <div class="right_btn">
+                <button class="blue_btn">Läs mer</button>
+            </div>
         </article>
-        <article>
-            <img src="#" alt="">
+        <article class="news">
+            <img src="img/halka.jpg" alt="En bil kör på en snöklädd väg i skogen">
             <h3>Halt på Uppsalas gator</h3>
             <p>Halkan har slagit till mot Uppsala, här rustar kommunen färdtjänstbilarna med nya däck.</p>
-            <button>Läs mer</button>
-        </article>
-        <a href="#">Fler nyheter</a>
+            <div class="right_btn">
+                <button class="blue_btn">Läs mer</button>
+            </div>
+        </article class="news">
+        <article class="news desktop_content">
+            <img src="img/corona.jpg" alt="coronaviruset">
+            <h3>Allmäna råd Covid-19</h3>
+            <p>Fortsatt smittspridning i Uppsala kommun, detta gäller för färdtjänst.</p>
+            <div class="right_btn">
+                <button class="blue_btn">Läs mer</button>
+            </div>
+        </article class="news">
+        <a href="#" class="mobile_content">Fler nyheter</a>
     </section>
     <footer>
         <img src="#" alt="">
         <h2>Kontakt</h2>
         <ul>
-            <li>Kontaktcenter: 018-420736</li>
-            <li>E-post: Uppsalafardtjanst@uppsala.se</li>
+            <li>Kontaktcenter: <span>018-420736</span></li>
+            <li>E-post: <span>Uppsalafardtjanst@uppsala.se</span></li>
         </ul>
         <a href="#">Tillgänglighetsredovisning</a>
     </footer>
 
 </body>
-
+<script src="js/main.js"></script>
 </html>
