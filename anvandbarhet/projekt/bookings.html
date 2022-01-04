@@ -1,23 +1,77 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <title>Uppsala färdtjänst | Mina resor</title>
+    <title>Uppsala färdtjänst</title>
 </head>
-<body>
-    <header>
 
+<body id="bookings">
+    <header>
+        <img src="img/logga.svg" alt="" class="logo">
+        <p class="desktop_content">Till huvudinnehåll</p>
+        <p class="desktop_content">Logga ut</p>
+        <button class="mobile_links" id="menuebtn">
+            Meny
+        </button>
     </header>
-    <h1>Mina resor</h1>
-    <p>Här visas dina bokade resor med Uppsala färdtjänst</p>
-    <section>
-        <h2>Kommande resor</h2>
-    </section>
-    <section>
-        <h2>Tidigare resor</h2>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startsidan</a></li>
+            <li><a href="book.html">Boka färdtjänst</a></li>
+            <li><a href="about.html">Om</a></li>
+            <li><a href="bookings.html">Mina resor</a></li>
+            <li><a href="myprofile.html">Min profil</a></li>
+        </ul>
+    </nav>
+    <h1 class="center-header">Mina resor</h1>
+    <div class="center-block">
+        <p>Här visas dina bokade resor med Uppsala färdtjänst.</p>
+        <section class="trips">
+            <h2>Kommande resor</h2>
+            <section class="coming-trip">
+                <h3>17:e Januari</h3>
+                <p>Murargatan 21B -> Svartbäcksgatan 31C</p>
+                <p>Upphämtning kl. 15:00</p>
+                <p>Egen bil önskas</p>
+                <h4>Returresa</h4>
+                <p>Svartbäcksgatan 31C -> Murargatan 21B</p>
+                <p>Upphämtning kl. 18:00</p>
+                <h4>Återkommande resa</h4>
+                <p>Samma dag, varje vecka</p>
+                <div class="buttons">
+                    <button class="yellow_btn form_btn" id="change-trip">Ändra</button>
+                    <button class="dark_blue_btn form_btn" id="cancel-trip">Avboka</button>
+                </div>
+            </section>
+        </section>
+        <section class="trips">
+            <h2>Tidigare resor</h2>
+            <section class="pre-trip">
+                <h3>22:a November</h3>
+                <p>Murargatan 21B <span>-></span> Frodegatan 2</p>
+                <p>Upphämtning kl. 12:00</p>
+                <p>Enkelresa</p>
+            </section>
+        </section>
+    </div>
+    <footer>
+        <img src="img/logga.svg" alt="" class="logo">
+        <h2>Kontakt</h2>
+        <ul>
+            <li>Kontaktcenter: <span>018-420736</span></li>
+            <li>E-post: <span>Uppsalafardtjanst@uppsala.se</span></li>
+        </ul>
+        <a href="#">Tillgänglighetsredovisning</a>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
-</html> 
+
+</html>

@@ -13,7 +13,7 @@
     <title>Uppsala färdtjänst</title>
 </head>
 
-<body>
+<body id="book">
     <header>
         <img src="img/logga.svg" alt="" class="logo">
         <p class="desktop_content">Till huvudinnehåll</p>
@@ -26,65 +26,81 @@
         <ul>
             <li><a href="index.html">Startsidan</a></li>
             <li><a href="book.html">Boka färdtjänst</a></li>
-            <li><a href="about">Om</a></li>
+            <li><a href="about.html">Om</a></li>
             <li><a href="bookings.html">Mina resor</a></li>
             <li><a href="myprofile.html">Min profil</a></li>
         </ul>
     </nav>
-    <h1>Boka färdtjänst</h1>
-    <form>
-        <p>Vart vill du åka?</p>
+    <h1 class="center-header">Boka färdtjänst</h1>
+    <form id="mainform" class="center-block">
+        <p class="formtext">Vart vill du åka?</p>
         <label for="from">Från: </label>
-        <input type="text" id="from">
+        <input type="text" id="from"><br class="mobile_content">
         <label for="to">Till: </label>
         <input type="text" id="to"><br>
 
         <label for="date">Datum: </label>
         <label for="time">Tid: </label>
-        <input type="text" id="time"><br>
-        <input type="week" id="date"> <br>
+        <input type="time" id="time"><br>
+        <input type="date" id="date"> <br>
 
-        <input type="checkbox" id="return">
+        <input type="checkbox" id="return" class="newsec">
         <label for="return">Returresa</label><br>
         <label for="datereturn">Datum: </label>
         <label for="timereturn">Tid: </label>
-        <input type="text" id="timereturn"><br>
-        <input type="week" id="datereturn"><br>
+        <input type="time" id="timereturn" disabled><br>
+        <input type="date" id="datereturn" disabled><br>
 
-        <input type="checkbox" id="recur">
+        <input type="checkbox" id="recur" class="newsec">
         <label for="recur">Återkommande resa</label> <br>
-        <input type="radio" id="daily" name="recur_opt" value="Varje dag">
-        <label for="daily">Varje dag</label><br>
-        <input type="radio" id="weekday" name="recur_opt" value="Varje vardag (måndag till fredag)">
-        <label for="daily">Varje vardag (måndag till fredag)</label><br>
-        <input type="radio" id="weekly" name="recur_opt" value="Varje vecka, samma dag">
-        <label for="daily">Varje vecka, samma dag</label><br>
-        <input type="radio" id="monthly" name="recur_opt" value="Varje månad, samma dag">
-        <label for="daily">Varje månad, samma dag</label><br>
-        <input type="radio" id="cust" name="recur_opt" value="Anpassad">
-        <label for="daily">Anpassad</label>
+        <fieldset id="recur_options">
+            <legend>Alternativ för återkommande resa</legend>
+            <input type="radio" id="daily" name="recur_opt" value="Varje dag">
+            <label for="daily">Varje dag</label><br>
 
-        <p>Övrig information</p><br>
+            <input type="radio" id="weekday" name="recur_opt" value="Varje vardag (måndag till fredag)">
+            <label for="weekday">Varje vardag (måndag till fredag)</label><br>
+
+            <input type="radio" id="weekly" name="recur_opt" value="Varje vecka, samma dag">
+            <label for="weekly">Varje vecka, samma dag</label><br>
+
+            <input type="radio" id="monthly" name="recur_opt" value="Varje månad, samma dag">
+            <label for="monthly">Varje månad, samma dag</label><br>
+
+            <input type="radio" id="cust" name="recur_opt" value="Anpassad">
+            <label for="cust">Anpassad</label>
+        </fieldset>
+
+        <p class="newsec">Övrig information</p><br>
         <input type="checkbox" id="car" value="Egen bil önskas">
         <label for="car">Egen bil önskas</label><br>
-        <input type="checkbox" id="copassenger" value="Medresenärer">
-        <label for="copassenger">Medresenärer</label>
-        <label for="numcopassenger">Antal: </label>
-        <select name="numcopassenger" id="numcopassenger">
-            <option value="1 medresenär">1 medresenär</option>
-            <option value="2 medresenärer">2 medresenärer</option>
-            <option value="3 medresenärer">3 medresenärer</option>
-            <option value="4 medresenärer">4 medresenärer</option>
-        </select><br>
+
+            <input type="checkbox" id="copassenger" value="Medresenärer">
+            <label for="copassenger">Medresenärer</label>
+            <label for="numcopassenger" id="copasstext">Antal: </label>
+            <select name="numcopassenger" id="numcopassenger" disabled>
+                <option value="1 medresenär">1 medresenär</option>
+                <option value="2 medresenärer">2 medresenärer</option>
+                <option value="3 medresenärer">3 medresenärer</option>
+                <option value="4 medresenärer">4 medresenärer</option>
+            </select><br>
         <input type="checkbox" id="escort" value="Ledsagare">
         <label for="escort">Ledsagare</label><br>
         <input type="checkbox" id="wheelchair" value="Rullstolsanpassad bil">
         <label for="wheelchair">Rullstolsanpassad bil</label><br>
-        <button type="button">Boka</button>
+        <button class="yellow_btn newsec form_btn" id="book-btn">Boka</button>
     </form>
     <footer>
-
+        <footer>
+            <img src="img/logga.svg" alt="" class="logo">
+            <h2>Kontakt</h2>
+            <ul>
+                <li>Kontaktcenter: <span>018-420736</span></li>
+                <li>E-post: <span>Uppsalafardtjanst@uppsala.se</span></li>
+            </ul>
+            <a href="#">Tillgänglighetsredovisning</a>
+        </footer>
     </footer>
+    <script src="js/main.js"></script>
 </body>
-<script src="js/main.js"></script>
 </html>

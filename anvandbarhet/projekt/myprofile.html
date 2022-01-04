@@ -1,36 +1,74 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <title>Uppsala färdtjänst | Min profil</title>
+    <title>Uppsala färdtjänst</title>
 </head>
-<body>
-    <header>
 
+<body id="myprofile">
+    <header>
+        <img src="img/logga.svg" alt="" class="logo">
+        <p class="desktop_content">Till huvudinnehåll</p>
+        <p class="desktop_content">Logga ut</p>
+        <button class="mobile_links" id="menuebtn">
+            Meny
+        </button>
     </header>
-    <h1>Min profil</h1>
-    <p>Här visas dina kontaktuppgifter och aviseringsinställningar. Vi hämtar ditt namn och adress från skatteverket.</p>
-    <section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startsidan</a></li>
+            <li><a href="book.html">Boka färdtjänst</a></li>
+            <li><a href="about.html">Om</a></li>
+            <li><a href="bookings.html">Mina resor</a></li>
+            <li><a href="myprofile.html">Min profil</a></li>
+        </ul>
+    </nav>
+    <h1 class="center-header">Min profil</h1>
+    <div class="center-block">
+    <p>Här visas dina kontaktuppgifter och aviseringsinställningar. Vi hämtar ditt namn och adress från skatteverket.
+    </p>
+    <section class="contact">
         <h2>Kontaktuppgifter</h2>
         <p>Ingela Engvall</p>
         <p>Murargatan 30A</p>
         <p>754 73 UPPSALA</p>
-        <P>Hemtelefon: 018-420435</P>
-        <p>Mobiltelefon: 070-9044920</p>
-        <p>E-post: Ingela.engvall@gmail.com</p>
-        <h2>Aviseringar</h2>
-        <p>En bekräftelse på din bokning skickas ut från Uppsala färdjänst då din beställning av färdtjänst har bekräftats. Du kan få denna bekräftelse via sms eller mail.</p>
-        <input type="checkbox" id="not_text">
-        <label for="not_text">Bekräftelse via sms</label>
-        <input type="checkbox" id="not_email">
-        <label for="not_email">Bekräftelse via e-post</label>
-        <button>Ändra</button>
-    </section>
-    <footer>
 
+        <label for="phone">Hemtelefon:</label>
+        <input type="text" id="phone" value="018-420435" disabled><br>
+        <label for="mobile">Mobiltelefon: </label>
+        <input type="text" id="mobile" value="070-9044920" disabled> <br>
+        <label for="email">E-post:</label>
+        <input type="email" id="email" value="Ingela.engvall@gmail.com" disabled>
+        <h2>Aviseringar</h2>
+        <p>En bekräftelse på din bokning skickas ut från Uppsala färdjänst då din beställning av färdtjänst har
+            bekräftats. Du kan få denna bekräftelse via sms eller mail.</p>
+        <input type="checkbox" id="not_text" name="Bekräftelse via sms" checked disabled>
+        <label for="not_text">Bekräftelse via sms</label><br>
+        <input type="checkbox" id="not_email" name="Bekräftelse via e-post" disabled> 
+        <label for="not_email">Bekräftelse via e-post</label>
+        <div class="buttons">
+            <button class="form_btn dark_blue_btn" id="profilebtn">Ändra</button>
+        </div>
+    </section>
+</div>
+    <footer>
+        <img src="img/logga.svg" alt="" class="logo">
+        <h2>Kontakt</h2>
+        <ul>
+            <li>Kontaktcenter: <span>018-420736</span></li>
+            <li>E-post: <span>Uppsalafardtjanst@uppsala.se</span></li>
+        </ul>
+        <a href="#">Tillgänglighetsredovisning</a>
     </footer>
+    <script src="js/main.js"></script>
 </body>
-</html> 
+
+</html>
