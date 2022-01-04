@@ -57,11 +57,15 @@ header {
     background-color: #262262;
     color: #FFFFFF;
     padding: 2rem;
+
+
+}
+
+.header-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .logo {
@@ -118,10 +122,6 @@ nav a:hover {
 }
 
 /*News design index page*/
-#news_header {
-    margin: 10% 15% 0;
-}
-
 .news {
     background-color: #F4F3FF;
     width: 70%;
@@ -299,3 +299,78 @@ fieldset {
     text-align: end;
 }
 
+@media all and (min-width: 800px){
+    .mobile_content{
+        display: none;
+    }
+    .desktop_content{
+        display: block;
+    }
+    header a{
+        color:#D4D1ED;
+    }
+    header a:hover{
+        color:white;
+    }
+    .header-content,.footer-content{
+        margin:auto;
+        max-width: 1080px;
+    }
+    .header-links{
+        display: flex;
+        flex-direction: row;
+        width:30%;
+        justify-content: space-between;
+    }
+    .desktop-nav{
+        position:relative;
+        transform:none;
+        background-color: #F4F3FF;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+    .general-links, .personal-links{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+
+    }
+    .desktop-nav ul{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1080px;
+        margin:auto;
+    }
+    .desktop-nav a{
+        color:#262262;
+        text-decoration: none;
+    }
+    .desktop-nav a:hover{
+        text-decoration: underline;
+        color:black;
+    }
+    .center-block, .center-header{
+        max-width: 600px;
+    }
+    .news_sec{
+        max-width: 1080px;
+        width: 90%;
+        margin:auto;
+    }
+    .news_sec h2{
+        margin: 2rem auto;
+    }
+    .news-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .news{
+        max-width: 30%;
+        margin:2rem 0;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

@@ -15,12 +15,17 @@
 
 <body id="index">
     <header>
-        <img src="img/logga.svg" alt="" class="logo">
-        <p class="desktop_content">Till huvudinnehåll</p>
-        <p class="desktop_content">Logga ut</p>
-        <button class="mobile_links" id="menuebtn">Meny</button>
+        <div class="header-content">
+            <a href="index.html"><img src="img/logga.svg" alt="" class="logo"></a>
+            <div class="header-links">
+                <a href="#main-content" class="desktop_content">Till huvudinnehåll</a>
+                <a href="#" class="desktop_content">Logga ut</a>
+            </div>
+
+            <button class="mobile_content" id="menuebtn">Meny</button>
+        </div>
     </header>
-    <nav>
+    <nav class="mobile_content">
         <ul>
             <li><a href="index.html">Startsidan</a></li>
             <li><a href="book.html">Boka färdtjänst</a></li>
@@ -29,9 +34,22 @@
             <li><a href="myprofile.html">Min profil</a></li>
         </ul>
     </nav>
-    <h1>Välkommen till Uppsala färdtjänst</h1>
+    <nav class="desktop-nav desktop_content">
+        <ul>
+            <div class="general-links">
+                <li><a href="index.html">Startsidan</a></li>
+                <li><a href="book.html">Boka färdtjänst</a></li>
+                <li><a href="about.html">Om</a></li>
+            </div>
+            <div class="personal-links">
+                <li><a href="bookings.html">Mina resor</a></li>
+                <li><a href="myprofile.html">Min profil</a></li>
+            </div>
+        </ul>
+    </nav>
+    <h1 id="main-content" class="center-header">Välkommen till Uppsala färdtjänst</h1>
 
-    <section id="book_start">
+    <section id="book_start" class="center-block">
         <h2>Boka färdtjänst</h2>
         <p>Vart vill du åka?</p>
         <label for="from-start" name="from-start">Från: </label>
@@ -42,42 +60,49 @@
     </section>
     <section class="news_sec">
         <h2 id="news_header">Nyheter</h2>
-        <article class="news">
-            <img src="img/kompisar.jpg" alt="Två personer tittar ut i en kohage">
-            <h3>Ensam i färdtjänstbilen</h3>
-            <p>Om man vill åka ensam i färdtjänstbilen behöver man från och med 1 oktober år 2021 betala en avgift.</p>
-            <div class="right_btn">
-                <button class="blue_btn form_btn">Läs mer</button>
-            </div>
-        </article>
-        <article class="news">
-            <img src="img/halka.jpg" alt="En bil kör på en snöklädd väg i skogen">
-            <h3>Halt på Uppsalas gator</h3>
-            <p>Halkan har slagit till mot Uppsala, här rustar kommunen färdtjänstbilarna med nya däck.</p>
-            <div class="right_btn">
-                <button class="blue_btn form_btn">Läs mer</button>
-            </div>
-        </article class="news">
-        <article class="news desktop_content">
-            <img src="img/corona.jpg" alt="coronaviruset">
-            <h3>Allmäna råd Covid-19</h3>
-            <p>Fortsatt smittspridning i Uppsala kommun, detta gäller för färdtjänst.</p>
-            <div class="right_btn">
-                <button class="blue_btn form_btn">Läs mer</button>
-            </div>
-        </article class="news">
+        <div class="news-container">
+            <article class="news">
+                <img src="img/kompisar.jpg" alt="Två personer tittar ut i en kohage">
+                <h3>Ensam i färdtjänstbilen</h3>
+                <p>Om man vill åka ensam i färdtjänstbilen behöver man från och med 1 oktober år 2021 betala en avgift.
+                </p>
+                <div class="right_btn">
+                    <button class="blue_btn form_btn">Läs mer</button>
+                </div>
+            </article>
+            <article class="news">
+                <img src="img/halka.jpg" alt="En bil kör på en snöklädd väg i skogen">
+                <h3>Halt på Uppsalas gator</h3>
+                <p>Halkan har slagit till mot Uppsala, här rustar kommunen färdtjänstbilarna med nya däck.</p>
+                <div class="right_btn">
+                    <button class="blue_btn form_btn">Läs mer</button>
+                </div>
+            </article>
+            <article class="news desktop_content">
+                <img src="img/corona.jpg" alt="coronaviruset">
+                <h3>Allmäna råd Covid-19</h3>
+                <p>Fortsatt smittspridning i Uppsala kommun, detta gäller för färdtjänst.</p>
+                <div class="right_btn">
+                    <button class="blue_btn form_btn">Läs mer</button>
+                </div>
+            </article>
+        </div>
         <a href="#" class="mobile_content">Fler nyheter</a>
     </section>
     <footer>
-        <img src="img/logga.svg" alt="" class="logo">
-        <h2>Kontakt</h2>
-        <ul>
-            <li>Kontaktcenter: <span>018-420736</span></li>
-            <li>E-post: <span>Uppsalafardtjanst@uppsala.se</span></li>
-        </ul>
-        <a href="#">Tillgänglighetsredovisning</a>
+        <div class="footer-content">
+            <img src="img/logga.svg" alt="" class="logo">
+            <div class="footer-contact">
+                <h2>Kontakt</h2>
+                <ul>
+                    <li>Kontaktcenter: <span>018-420736</span></li>
+                    <li>E-post: <span>Uppsalafardtjanst@uppsala.se</span></li>
+                </ul>
+            </div>
+            <a href="#">Tillgänglighetsredovisning</a>
+        </div>
     </footer>
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

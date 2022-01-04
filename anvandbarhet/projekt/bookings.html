@@ -15,14 +15,17 @@
 
 <body id="bookings">
     <header>
-        <img src="img/logga.svg" alt="" class="logo">
-        <p class="desktop_content">Till huvudinnehåll</p>
-        <p class="desktop_content">Logga ut</p>
-        <button class="mobile_links" id="menuebtn">
-            Meny
-        </button>
+        <div class="header-content">
+            <a href="index.html"><img src="img/logga.svg" alt="" class="logo"></a>
+            <div class="header-links">
+                <a href="#main-content" class="desktop_content">Till huvudinnehåll</a>
+                <a href="#" class="desktop_content">Logga ut</a>
+            </div>
+
+            <button class="mobile_content" id="menuebtn">Meny</button>
+        </div>
     </header>
-    <nav>
+    <nav class="mobile_content">
         <ul>
             <li><a href="index.html">Startsidan</a></li>
             <li><a href="book.html">Boka färdtjänst</a></li>
@@ -31,7 +34,20 @@
             <li><a href="myprofile.html">Min profil</a></li>
         </ul>
     </nav>
-    <h1 class="center-header">Mina resor</h1>
+    <nav class="desktop-nav desktop_content">
+        <ul>
+            <div class="general-links">
+                <li><a href="index.html">Startsidan</a></li>
+                <li><a href="book.html">Boka färdtjänst</a></li>
+                <li><a href="about.html">Om</a></li>
+            </div>
+            <div class="personal-links">
+                <li><a href="bookings.html">Mina resor</a></li>
+                <li><a href="myprofile.html">Min profil</a></li>
+            </div>
+        </ul>
+    </nav>
+    <h1 class="center-header" id="main-content">Mina resor</h1>
     <div class="center-block">
         <p>Här visas dina bokade resor med Uppsala färdtjänst.</p>
         <section class="trips">
@@ -63,13 +79,17 @@
         </section>
     </div>
     <footer>
-        <img src="img/logga.svg" alt="" class="logo">
-        <h2>Kontakt</h2>
-        <ul>
-            <li>Kontaktcenter: <span>018-420736</span></li>
-            <li>E-post: <span>Uppsalafardtjanst@uppsala.se</span></li>
-        </ul>
-        <a href="#">Tillgänglighetsredovisning</a>
+        <div class="footer-content">
+            <img src="img/logga.svg" alt="" class="logo">
+            <div class="footer-contact">
+                <h2>Kontakt</h2>
+                <ul>
+                    <li>Kontaktcenter: <span>018-420736</span></li>
+                    <li>E-post: <span>Uppsalafardtjanst@uppsala.se</span></li>
+                </ul>
+            </div>
+            <a href="#">Tillgänglighetsredovisning</a>
+        </div>
     </footer>
     <script src="js/main.js"></script>
 </body>
