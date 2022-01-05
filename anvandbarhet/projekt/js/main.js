@@ -25,7 +25,6 @@ window.addEventListener("load", init);
 function runFuncs() {
     //Based on current page
     let page = document.body.id;
-    console.log(page);
     switch (page) {
         case "index":
             console.log("ind");
@@ -39,6 +38,12 @@ function runFuncs() {
         case "myprofile":
             console.log("profile")
             myProfileFunc();
+            break;
+        case "bookings":
+            bookingsFunc();
+            break;
+        case "changebook":
+            changeBookFunc();
             break;
     }
 
@@ -123,5 +128,19 @@ function myProfileFunc(){
             document.getElementById("not_email").disabled = true;
             alert("Dina ändringar har sparats")
         }
+    })
+}
+
+function bookingsFunc(){
+    let changebtn = document.getElementById("change-trip");
+    changebtn.addEventListener("click", () =>{
+        location.href = "changebooking.html";
+    })
+}
+
+function changeBookFunc(){
+    let btn = document.getElementById("book-btn");
+    btn.addEventListener("click", () =>{
+        location.href="index.html"
     })
 }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <title>Uppsala färdtjänst</title>
+</head>
+
+<body id="changebook">
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="img/logga.svg" alt="" class="logo"></a>
+            <div class="header-links">
+                <a href="#main-content" class="desktop_content">Till huvudinnehåll</a>
+                <a href="#" class="desktop_content">Logga ut</a>
+            </div>
+
+            <button class="mobile_content" id="menuebtn">Meny</button>
+        </div>
+    </header>
+    <nav class="mobile_content">
+        <ul>
+            <li><a href="index.html">Startsidan</a></li>
+            <li><a href="book.html">Boka färdtjänst</a></li>
+            <li><a href="about.html">Om</a></li>
+            <li><a href="bookings.html">Mina resor</a></li>
+            <li><a href="myprofile.html">Min profil</a></li>
+        </ul>
+    </nav>
+    <nav class="desktop-nav desktop_content">
+        <ul>
+            <div class="general-links">
+                <li><a href="index.html">Startsidan</a></li>
+                <li><a href="book.html">Boka färdtjänst</a></li>
+                <li><a href="about.html">Om</a></li>
+            </div>
+            <div class="personal-links">
+                <li><a href="bookings.html">Mina resor</a></li>
+                <li><a href="myprofile.html">Min profil</a></li>
+            </div>
+        </ul>
+    </nav>
+    <h1 class="center-header" id="main-content">Ändra resa</h1>
+    <form id="mainform" class="center-block">
+        <p class="formtext">Vart vill du åka?</p>
+        <label for="from">Från: </label>
+        <input type="text" id="from" value="Murargatan 21B"><br class="mobile_content">
+        <label for="to">Till: </label>
+        <input type="text" id="to" value="Svartbäcksgatan 31C"><br>
+
+        <label for="date">Datum: </label>
+        <label for="time">Tid: </label>
+        <input type="time" id="time" value="15:00"><br>
+        <input type="date" id="date" value="2022-01-17"> <br>
+
+        <input type="checkbox" id="return" class="newsec" checked>
+        <label for="return">Returresa</label><br>
+        <label for="datereturn">Datum: </label>
+        <label for="timereturn">Tid: </label>
+        <input type="time" id="timereturn" value="18:00"><br>
+        <input type="date" id="datereturn" value="2022-01-17"><br>
+
+        <input type="checkbox" id="recur" class="newsec" checked>
+        <label for="recur">Återkommande resa</label> <br>
+        <fieldset id="recur_options">
+            <legend>Alternativ för återkommande resa</legend>
+            <input type="radio" id="daily" name="recur_opt" value="Varje dag">
+            <label for="daily">Varje dag</label><br>
+
+            <input type="radio" id="weekday" name="recur_opt" value="Varje vardag (måndag till fredag)">
+            <label for="weekday">Varje vardag (måndag till fredag)</label><br>
+
+            <input type="radio" id="weekly" name="recur_opt" value="Varje vecka, samma dag" checked>
+            <label for="weekly">Varje vecka, samma dag</label><br>
+
+            <input type="radio" id="monthly" name="recur_opt" value="Varje månad, samma dag">
+            <label for="monthly">Varje månad, samma dag</label><br>
+
+            <input type="radio" id="cust" name="recur_opt" value="Anpassad">
+            <label for="cust">Anpassad</label>
+        </fieldset>
+
+        <p class="newsec">Övrig information</p><br>
+        <input type="checkbox" id="car" value="Egen bil önskas" checked>
+        <label for="car">Egen bil önskas</label><br>
+
+        <input type="checkbox" id="copassenger" value="Medresenärer">
+        <label for="copassenger">Medresenärer</label>
+        <label for="numcopassenger" id="copasstext">Antal: </label>
+        <select name="numcopassenger" id="numcopassenger" disabled>
+            <option value="1 medresenär">1 medresenär</option>
+            <option value="2 medresenärer">2 medresenärer</option>
+            <option value="3 medresenärer">3 medresenärer</option>
+            <option value="4 medresenärer">4 medresenärer</option>
+        </select><br>
+        <input type="checkbox" id="escort" value="Ledsagare">
+        <label for="escort">Ledsagare</label><br>
+        <input type="checkbox" id="wheelchair" value="Rullstolsanpassad bil">
+        <label for="wheelchair">Rullstolsanpassad bil</label><br>
+        <button class="yellow_btn newsec form_btn" id="book-btn">Spara</button>
+    </form>
+    <footer>
+        <div class="footer-content">
+            <img src="img/logga.svg" alt="" class="logo">
+            <div class="footer-contact">
+                <h2>Kontakt</h2>
+                <ul>
+                    <li>Kontaktcenter: <span>018-420736</span></li>
+                    <li>E-post: <span>Uppsalafardtjanst@uppsala.se</span></li>
+                </ul>
+            </div>
+            <a href="#">Tillgänglighetsredovisning</a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

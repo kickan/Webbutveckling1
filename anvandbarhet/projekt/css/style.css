@@ -122,6 +122,11 @@ nav a:hover {
 }
 
 /*News design index page*/
+#news_header{
+    margin: 2rem auto;
+    width:90%;
+    max-width: 400px;
+}
 .news {
     background-color: #F4F3FF;
     width: 70%;
@@ -299,12 +304,25 @@ fieldset {
     text-align: end;
 }
 
+#changebook #recur_options{
+    display: block;
+}
+
 @media all and (min-width: 800px){
     .mobile_content{
         display: none;
     }
     .desktop_content{
         display: block;
+    }
+    body{
+        position:relative;
+        min-height: 100vh;
+    }
+    body::after{
+        content: "";
+        display: block;
+        height: 183px;
     }
     header a{
         color:#D4D1ED;
@@ -357,8 +375,10 @@ fieldset {
         width: 90%;
         margin:auto;
     }
-    .news_sec h2{
-        margin: 2rem auto;
+    #news_header{
+        max-width: 1080px;
+        width:90%;
+        margin: 2rem 0;
     }
     .news-container{
         display: flex;
@@ -373,4 +393,11 @@ fieldset {
         justify-content: space-between;
         align-items: flex-start;
     }
+    footer{
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        height: 153.6px;
+    }
+
 }
