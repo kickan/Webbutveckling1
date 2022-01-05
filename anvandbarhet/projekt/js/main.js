@@ -133,14 +133,23 @@ function myProfileFunc(){
 
 function bookingsFunc(){
     let changebtn = document.getElementById("change-trip");
+    let cancelbtn = document.getElementById("cancel-trip");
     changebtn.addEventListener("click", () =>{
         location.href = "changebooking.html";
     })
+    cancelbtn.addEventListener("click", () =>{
+        if (window.confirm("Är du säker på att du vill avboka din resa?")){
+            location.href="canceltrip.html";
+        }
+    })
+
 }
 
 function changeBookFunc(){
     let btn = document.getElementById("book-btn");
     btn.addEventListener("click", () =>{
-        location.href="index.html"
+        if(window.confirm("Vill du spara dina ändringar?")){
+            alert("Dina ändringar har sparats");
+        }
     })
 }
