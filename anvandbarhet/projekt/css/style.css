@@ -345,21 +345,22 @@ fieldset {
         position:relative;
         transform:none;
         background-color: #F4F3FF;
-        justify-content: space-between;
         padding: 1rem 2rem;
+
+    }
+    .nav-lst-container{
+        max-width: 1080px;
+        margin:auto;
+        display: flex;
+        justify-content: space-between;
     }
     .general-links, .personal-links{
         display: flex;
         justify-content: space-between;
         width: 30%;
-
-    }
-    .desktop-nav ul{
         flex-direction: row;
-        justify-content: space-between;
-        max-width: 1080px;
-        margin:auto;
     }
+
     .desktop-nav a{
         color:#262262;
         text-decoration: none;
