@@ -27,16 +27,13 @@ function runFuncs() {
     let page = document.body.id;
     switch (page) {
         case "index":
-            console.log("ind");
             indexFunc();
             break;
         case "book":
-            console.log("book")
             getLocations();
             bookFunc();
             break;
         case "myprofile":
-            console.log("profile")
             myProfileFunc();
             break;
         case "bookings":
