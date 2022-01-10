@@ -1,7 +1,183 @@
+/*Mobile first*/
+
+/*  ===============
+    Global settings
+    =============== */
+
+/*  GENERAL
+    --------*/
+html {
+    font-size: 62.5%;
+    background-color: white;
+}
+
+* {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  FONTS 
+    ------*/
+h1, h2, h3, h4 {
+    font-family: 'Shojumaru', cursive;
+}
+
+p, a, button, li {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
 
 h1 {
-    font-family: 'Shojumaru', cursive;
-    }
-p{
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p, button, a, li {
+    font-size: 1.8rem;
+}
+
+/*  MOBILE
+    -------*/
+.desk-cont {
+    display: none;
+}
+
+/*  ===============
+    Sections
+    =============== */
+
+body{
+    overflow-x: hidden;
+}
+
+/*  HEADER
+    -------*/
+header {
+    background-color: #241B15;
+    color: #FFF9EE;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+        /*<--------------------------------------------------kan ändra sen*/
+}
+.basket-logo{
+    width: 30px;
+    /*<--------------------------------------------------kan ändra sen*/
+}
+
+/*  MOBILE NAV
+    -----------*/
+.mob-nav {
+    background-color: #241B15;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: transform 300ms cubic-bezier(.5, 0, .5, 1)
+}
+
+.nav-open .mob-nav{
+    transform:translateX(0);
+}
+
+.mob-nav__list {
+    list-style: none;
+}
+
+.mob-nav__list li {
+    margin: 3rem;
+}
+
+.mob-nav__list a {
+    color: #FFF9EE;
+    text-decoration: none;
+}
+
+/*  FOOTER
+    --------*/
+footer {
+    background-color: #FF3F03;
+    color: #241B15;
+    padding: 2rem;
+}
+
+/*  MAIN-CONTENT
+    -------------*/
+.main-content {
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+    color: #241B15;
+}
+
+.coverimg {
+    max-width: 100%;
+    /*<-----------------------------------------------------------------------------------------Kan ändras sen*/
+    margin: 1rem auto;
+}
+
+/*  CATEGORY SECTION
+    -----------------*/
+.cat-card__container {
+    margin: 1rem auto;
+}
+
+.cat-card {
+    background-color: #FBEBEF;
+    padding: 3rem 2rem;
+    border: 2px solid #241B15;
+}
+
+.cat-card__img {
+    max-width: 100%;
+}
+
+/*  PRODUCT SECTION
+    ----------------*/
+
+.prod-card__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.prod-card {
+    background-color: #FFF9EE;
+    text-align: left;
+    padding: 1rem 1rem;
+    border: 1px solid #241B15;
+    margin: 1rem;
+}
+
+.prod-card__img {
+    max-width: 100%;
+    /*<---------------------------------------------------------------------------------------kan ändra sen*/
+}
+
+/*  TEXT SECTION
+    ------------*/
+.text-container {
+    text-align: left;
+    background-color: #241B15;
+    color: #FFF9EE;
+    padding: 2rem;
 }
