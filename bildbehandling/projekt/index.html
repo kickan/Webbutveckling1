@@ -16,30 +16,34 @@
 
 <body>
     <header>
-        <div class="mob-cont">
-            <p id="menue-btn">hej</p>
-        </div>
-        <nav class="desk-cont">
+        <button class="mob-cont" id="menu-btn"><span class="hamburger"></span></button>
+        <nav class="desk-cont nav--desk">
             <ul>
-                <li>Böcker</li>
-                <li>Pins</li>
-                <li>Diverse</li>
-                <li>Om</li>
+                <li><a href="books.html">Böcker</a></li>
+                <li><a href="pins.html">Pins</a></li>
+                <li><a href="div.html">Diverse</a></li>
+                <li><a href="about.html">Om</a></li>
             </ul>
         </nav>
-        <img src="img/logga.png" alt="Torii shop" class="logo">
-        <a href="#"><img src="img/basket_logo.svg" alt="" class="basket-logo"></a>
+        <a href="index.html"><img src="img/logga.png" alt="Torii shop" class="logo"></a>
+        <a href="#"><img src="img/icons/basket_logo.svg" alt="" class="basket-logo"></a>
     </header>
     <nav class="mob-nav mob-cont">
         <ul class="mob-nav__list">
-            <li><a href="#">Böcker</a></li>
-            <li><a href="#">Pins</a></li>
-            <li><a href="#">Diverse</a></li>
-            <li><a href="#">Om</a></li>
+            <li><a href="index.html">Startsidan</a></li>
+            <li><a href="books.html">Böcker</a></li>
+            <li><a href="pins.html">Pins</a></li>
+            <li><a href="div.html">Diverse</a></li>
+            <li><a href="about.html">Om</a></li>
         </ul>
     </nav>
-    <h1 class="main-content">En port till Japan</h1>
-    <img src="img/geisha_cover01.jpg" alt="" class="coverimg">
+    <h1 class="main-content page-title">En port till Japan</h1>
+    <picture>
+        <source srcset="img/geisha_mob_cover01.webp" media="(max-width:800px)" type="image/webp">
+        <source srcset="img/geisha_mob_cover01.jpg" media="(max-width:800px)" type="image/jpg">
+        <source srcset="img/geisha_desk_cover01.webp" media="(min-width:801px)" type="image/webp">
+        <img src="img/geisha_desk_cover01.jpg" alt="En Geisha promenerar på gatan i Japan" class="coverimg">
+    </picture>
     <div class="main-content">
         <section class="cat-card__container">
             <section class="cat-card">
@@ -56,7 +60,7 @@
             </section>
         </section>
         <h2>Utvalda produkter</h2>
-        <section class="prod-card__container">
+        <section class="prod-card__cont ">
             <section class="prod-card">
                 <img src="img/totoro01.png" alt="" class="prod-card__img">
                 <h3>Virkad Totoro</h3>
@@ -79,7 +83,7 @@
             </section>
         </section>
     </div>
-    <section class="text-container">
+    <section class="text-cont--dark">
         <h2>Torii Shop</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis necessitatibus sapiente assumenda sint
             sunt obcaecati culpa vitae, officia repellendus ex adipisci architecto voluptate voluptatem error dolor
@@ -90,9 +94,9 @@
         <p>E-post: info@toriishop.se</p>
         <p>Tel: 073-28 19 283</p>
         <h2>Följ oss</h2>
-        <img src="img/linkedIn_logo.svg" alt="" class="social-media-icon">
-        <img src="img/facebook_logo.svg" alt="" class="social-media-icon">
-        <img src="img/snapchat_logo.svg" alt="" class="social-media-icon">
+        <img src="img/icons/linkedIn_logo.svg" alt="" class="social-media-icon">
+        <img src="img/icons/facebook_logo.svg" alt="" class="social-media-icon">
+        <img src="img/icons/snapchat_logo.svg" alt="" class="social-media-icon">
     </footer>
     <script src="js/main.js"></script>
 </body>

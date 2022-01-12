@@ -4,8 +4,8 @@
 function init(){
 
     //Mobile menue bar
-    let menuebtn = document.getElementById("menue-btn");
-    menuebtn.addEventListener("click", ()=>{
+    let menuBtn = document.getElementById("menu-btn");
+    menuBtn.addEventListener("click", ()=>{
         document.body.classList.toggle("nav-open");
     })
 
