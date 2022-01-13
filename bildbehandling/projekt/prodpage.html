@@ -11,23 +11,23 @@
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,700;1,400&family=Shojumaru&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.jdSlider.css" type="text/css">
     <title>Torii Shop</title>
 </head>
 
-<body>
+<body id="prodpage">
     <header>
         <button class="mob-cont" id="menu-btn"><span class="hamburger"></span></button>
-        <nav class="desk-cont">
+        <nav class="desk-cont nav--desk">
             <ul>
-                <li><a href="index.html">Startsidan</a></li>
                 <li><a href="books.html">Böcker</a></li>
                 <li><a href="pins.html">Pins</a></li>
                 <li><a href="div.html">Diverse</a></li>
                 <li><a href="about.html">Om</a></li>
             </ul>
         </nav>
-        <img src="img/logga.png" alt="Torii shop" class="logo">
-        <a href="#"><img src="img/basket_logo.svg" alt="" class="basket-logo"></a>
+        <a href="index.html"><img src="img/logga.png" alt="Torii shop" class="logo"></a>
+        <a href="#"><img src="img/icons/basket_logo.svg" alt="" class="basket-logo"></a>
     </header>
     <nav class="mob-nav mob-cont">
         <ul class="mob-nav__list">
@@ -39,31 +39,48 @@
         </ul>
     </nav>
     <section class="prod-card--full">
-        <img src="img/totoro01.png" alt="" class="prod-card__img--full">
-        <h3>Virkad Totoro</h3>
-        <p>200 kr</p>
+        <div class="prod-card--full__content">
+            <section class="jd-slider prod-slide">
+                <div class="slide-inner">
+                    <ul class="slide-area">
+                    </ul>
+                </div>
+                <a href="#" class="prev">
+                    <img src="img/icons/arrow_prev.svg" alt="">
+                </a>
+                <a href="#" class="next">
+                    <img src="img/icons/arrow_next.svg" alt="">
+                </a>
+                <div class="controller">
+                    <div class="indicate-area"></div>
+                </div>
+            </section>
+
+            <h1 id="prod-name"></h1>
+            <p><span id="price"></span> kr</p>
+        </div>
     </section>
     <button class="btn--dark btn--buy">Köp</button>
 
     <section class="text-cont--pink">
         <div class="img-text-cont">
-            <img src="img/arrow.svg" alt="">
+            <img src="img/icons/arrow.svg" alt="">
             <p>Kostnadsfri retur</p>
         </div>
-        <div class="img-text-cont"> 
-            <img src="img/calender.svg" alt="">
+        <div class="img-text-cont">
+            <img src="img/icons/calender.svg" alt="">
             <p>Öppet köp i 30 dagar</p>
         </div>
 
-        <div class="img-text-cont"> 
-            <img src="img/transport.svg" alt="">
+        <div class="img-text-cont">
+            <img src="img/icons/transport.svg" alt="">
             <p>Fri frakt över 399 kr</p>
         </div>
 
     </section>
     <section class="text-cont--light">
         <h2>Beskrivning</h2>
-        <p>Virkad Totoro i turkost bomullsgarn. Höjd 34 cm.</p>
+        <p id ="description"></p>
 
     </section>
     <footer>
@@ -71,11 +88,14 @@
         <p>E-post: info@toriishop.se</p>
         <p>Tel: 073-28 19 283</p>
         <h2>Följ oss</h2>
-        <img src="img/linkedIn_logo.svg" alt="" class="social-media-icon">
-        <img src="img/facebook_logo.svg" alt="" class="social-media-icon">
-        <img src="img/snapchat_logo.svg" alt="" class="social-media-icon">
+        <img src="img/icons/linkedIn_logo.svg" alt="" class="social-media-icon">
+        <img src="img/icons/facebook_logo.svg" alt="" class="social-media-icon">
+        <img src="img/icons/snapchat_logo.svg" alt="" class="social-media-icon">
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.jdSlider-latest.js"></script>
 </body>
 
 </html>

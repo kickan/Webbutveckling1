@@ -23,7 +23,7 @@ html {
 /*  FONTS 
     ------*/
 h1, h2, h3, h4, button {
-    font-family:'Shojumaru', cursive;
+    font-family: 'Shojumaru', cursive;
 }
 
 p, a, li, label, input {
@@ -89,7 +89,7 @@ header {
 .mob-nav {
     background-color: #241B15;
     position: absolute;
-    z-index:100;
+    z-index: 100;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -163,13 +163,12 @@ footer {
     ----------------*/
 
 .prod-card__cont {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem auto;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 45%));
+    grid-auto-rows: 1fr;
     row-gap: 2rem;
+    justify-content: space-between;
+    margin: 2rem 0;
 }
 
 /*  TEXT SECTION
@@ -192,11 +191,11 @@ footer {
 
 /*  Total amount section
     ---------------------*/
-.amount-cont{
+.amount-cont {
     text-align: center;
     background-color: #FFF9EE;
     border-top: 1px solid #241B15;
-    border-bottom:1px solid #241B15;
+    border-bottom: 1px solid #241B15;
     margin-top: 2rem;
     padding: 3rem;
 }
@@ -266,51 +265,60 @@ footer {
 .prod-card, .prod-card--full {
     background-color: #FFF9EE;
     text-align: left;
-
     margin: auto;
 }
 
 .prod-card {
-    padding: 1rem;
-    max-width: 45%;
-    min-width: 150px;
     border: 1px solid #241B15;
+    height: 100%;
+    padding: 1rem;
+    width: 100%;
+    transition: translate 500ms;
+}
+
+.prod-card:hover{
+    cursor: pointer;
+    transform: translate(2px,2px);
 }
 
 .prod-card--full {
     padding: 3rem;
 }
+.prod-card--full h1{
+    font-size: 2.4rem;
+}
 
 .prod-card__img, .prod-card__img--full {
-    margin:auto;
+    margin: auto;
     display: block;
     max-width: 100%;
-    /*<---------------------------------------------------------------------------------------kan ändra sen*/
 }
+
+/*<---------------------------------------------------------------------------------------kan ändra sen*/
 
 /*  PRODUCT CARD BAG
     -----------------*/
 .bag__prod-card {
     background-color: #FBEBEF;
     display: flex;
-    justify-content:start;
+    justify-content: start;
     gap: 2rem;
     position: relative;
-    z-index:1;
+    z-index: 1;
     padding: 1rem;
     border: 1px solid #241B15;
 }
 
-.bag__prod-card input{
+.bag__prod-card input {
     width: 5rem;
 }
 
-.bag__prod-card__img{
+.bag__prod-card__img {
     width: 100px;
     /*<------------------------------------------------------------------kan ändra sen*/
 }
 
-.trashcan{
+.trashcan {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
@@ -344,13 +352,51 @@ footer {
     margin: 2rem;
 }
 
-@media all and (min-width: 800px){
+.prev img, .next img{
+    width: 40px;
+    position: absolute;
+    top: 50%;
+}
+
+.prev img{
+    left:0;
+}
+.next img{
+    right: 0;
+}
+
+
+.prev, .next{
+    width: 50%;
+    height: 100%;
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity 400ms linear;
+}
+
+.prev:hover, .next:hover{
+    opacity: 100;
+}
+
+/* small phones*/
+@media all and (max-width: 350px) {
+    .prod-card__cont {
+        grid-template-columns: 1fr;
+        max-width: 180px;
+        margin: 2rem auto;
+    }
+}
+
+/*Desktop and tablet */
+@media all and (min-width: 800px) {
+
     /*  DESKTOP
         ---------*/
-    .desk-cont{
+    .desk-cont {
         display: block;
     }
-    .mob-cont{
+
+    .mob-cont {
         display: none;
     }
 
@@ -364,33 +410,34 @@ footer {
 
     /*  HEADER
         -------*/
-    header{
+    header {
         position: relative;
         justify-content: center;
-        padding:0;
+        padding: 1rem 3rem;
     }
 
-    .basket-logo{
+    .basket-logo {
         position: absolute;
         bottom: 2rem;
-        right: 2rem;
+        right: 3rem;
     }
 
     /*  NAV
         ----*/
-    .nav--desk{
+    .nav--desk {
         position: absolute;
         bottom: 2rem;
-        left: 2rem;
+        left: 3rem;
         width: 30%;
     }
-    .nav--desk ul{
+
+    .nav--desk ul {
         display: flex;
         list-style: none;
         justify-content: space-between;
     }
 
-    .nav--desk a{
+    .nav--desk a {
         color: #FFF9EE;
         font-family: 'Shojumaru', cursive;
         text-decoration: none;
@@ -398,33 +445,100 @@ footer {
 
     /*  MAIN CONTENT
         -------------*/
-    .main-content{
+    .main-content {
         max-width: 1080px;
     }
 
     /*  CATEGORY CONTAINER
         -------------------*/
-        .cat-card__container{
-            display: flex;
-        }
-        .cat-card{
-            padding: 6rem 3rem;
-        }
-        .cat-card__img{
-            margin-bottom: 2rem;
-        }
+    .cat-card__container {
+        display: flex;
+    }
+
+    .cat-card {
+        padding: 6rem 3rem;
+    }
+
+    .cat-card__img {
+        margin-bottom: 2rem;
+    }
+
+    /*  PRODUCT CONTAINER
+        ------------------*/
+    .prod-card__cont {
+        grid-template-columns: repeat(4, minmax(0, 21%));
+    }
+
+    .prod-card__cont--three {
+        grid-template-columns: repeat(3, minmax(0, 27%));
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+
+
+
+    /*  TEXT SECTION
+        ------------*/
+    .text-cont--dark {
+        max-width: 800px;
+        margin: 2rem auto;
+    }
+    .text-cont--light{
+        max-width: 500px;
+        margin: 2rem auto;
+    } 
+    .text-cont--pink {
+        max-width: 1080px;
+        margin: 2rem auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: none;
+    }
 
     /*  ===========
         Components
         ===========*/
-    .coverimg{
+
+    /*  COVER IMG
+            ----------*/
+    .coverimg {
         width: 90%;
         display: block;
         max-width: 1080px;
+        margin: auto;
+    }
+
+    /*  PRODUCT CARDS
+        --------------*/
+    .prod-card__cont--three .prod-card {
+        padding: 2rem 1rem;
+    }
+
+    .bag__prod-card, .amount-cont {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .prod-card--full__content{
+        max-width: 500px;
         margin:auto;
     }
 
-    .prod-card{
-        max-width: 20%;
+    /*  BUTTONS
+        --------*/
+    .btn--dark {
+        max-width: 500px;
     }
+
+    /*  OTHER 
+        ------*/
+
+    .amount-cont {
+        border: 1px solid #241B15;
     }
+
+    .img-text-cont {
+        width: 100%;
+    }
+}
