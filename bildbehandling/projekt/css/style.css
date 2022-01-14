@@ -386,6 +386,7 @@ footer {
 
 .pay-form__cont {
     max-width: 800px;
+    margin:2rem auto;
 }
 
 
@@ -603,11 +604,7 @@ footer {
         margin: auto;
     }
 
-    /*  PAY FORMS
-        ----------*/
-    .pay-form__cont {
-        max-width: 1080px;
-    }
+
 
     /*  BUTTONS
         --------*/
