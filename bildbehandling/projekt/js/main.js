@@ -47,6 +47,14 @@ function addProdInfo() {
 function addPics(numPics, prodName) {
     let slideArea = document.querySelector(".slide-area");
     for (let i = 1; i <= parseInt(numPics); i++) {
+        if (prodName == "totoro"){
+            let video = document.getElementsByClassName("videodiv");
+            video[0].innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/qMEIQ0BENqU' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+        }
+        else{
+            let videoCont = document.getElementsByClassName("videodiv__cont");
+            videoCont[0].style.display = "none";
+        }
         let liElem = document.createElement("li");
         let picture = document.createElement("picture");
         let source = document.createElement("source");
