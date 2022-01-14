@@ -43,7 +43,7 @@ h4 {
     font-size: 1.8rem;
 }
 
-a{
+a {
     color: #212aa1;
 }
 
@@ -61,11 +61,20 @@ header {
 
 }
 
-.header-content{
+.header-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+#main-cont-link {
+    transform: translateY(-50px);
+    transition: transform 300ms;
+}
+
+#main-cont-link:focus {
+    transform: translateY(0);
 }
 
 .logo {
@@ -122,11 +131,12 @@ nav a:hover {
 }
 
 /*News design index page*/
-#news_header{
+#news_header {
     margin: 2rem auto;
-    width:90%;
+    width: 90%;
     max-width: 400px;
 }
+
 .news {
     background-color: #F4F3FF;
     width: 70%;
@@ -154,7 +164,7 @@ nav a:hover {
     color: #202E45;
 }
 
-.form_btn:hover{
+.form_btn:hover {
     cursor: pointer;
 }
 
@@ -174,12 +184,12 @@ nav a:hover {
     background-color: #b2afd7;
 }
 
-.dark_blue_btn{
+.dark_blue_btn {
     background-color: #262262;
     color: white;
 }
 
-.dark_blue_btn:hover{
+.dark_blue_btn:hover {
     background-color: #D4D1ED;
     color: #202E45;
 }
@@ -246,157 +256,192 @@ fieldset {
 
 /*design specific for about.html*/
 
-.center-header{
+.center-header {
     margin: 2rem auto;
-    width:90%;
+    width: 90%;
     max-width: 400px;
 }
 
 .center-block {
     margin: auto;
-    width:90%;
+    width: 90%;
     max-width: 400px;
 }
 
 .center-block ul {
     padding: 2rem;
 }
-.center-block h2{
-     margin-top: 3rem; 
- }
-.center-block h3{
-     margin-top: 2rem;
- }
-.center-block h4{
-     margin-top: 1rem;
- }
 
- #contact-info{
-     background-color:#F4F3FF;
-     padding: 1rem 2rem;
-     margin-top: 1rem;
- }
+.center-block h2 {
+    margin-top: 3rem;
+}
 
- /*Design specific for bookings.html*/
-.trips h2{
+.center-block h3 {
+    margin-top: 2rem;
+}
+
+.center-block h4 {
+    margin-top: 1rem;
+}
+
+#contact-info {
+    background-color: #F4F3FF;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+}
+
+/*Design specific for bookings.html*/
+.trips h2 {
     margin: 2rem 0;
 }
 
- .pre-trip, .coming-trip{
-     background-color: #F4F3FF;
-     padding: 2rem;
-     margin: 2rem 0;
- }
-
- .coming-trip .buttons{
-     text-align: end;
- }
- .coming-trip .buttons button{
-     margin-left:2rem;
- }
-
- /*Design specific for myprofile.html*/
- .contact{
+.pre-trip, .coming-trip {
     background-color: #F4F3FF;
     padding: 2rem;
- }
+    margin: 2rem 0;
+}
 
-.contact .buttons{
+.coming-trip .buttons {
     text-align: end;
 }
 
-#changebook #recur_options{
+.coming-trip .buttons button {
+    margin-left: 2rem;
+}
+
+/*Design specific for myprofile.html*/
+.contact {
+    background-color: #F4F3FF;
+    padding: 2rem;
+}
+
+.contact .buttons {
+    text-align: end;
+}
+
+#changebook #recur_options {
     display: block;
 }
 
-@media all and (min-width: 800px){
-    .mobile_content{
+@media all and (min-width: 800px) {
+    .mobile_content {
         display: none;
     }
-    .desktop_content{
+
+    .desktop_content {
         display: block;
     }
-    body{
-        position:relative;
+
+    body {
+        position: relative;
         min-height: 100vh;
     }
-    body::after{
+
+    body::after {
         content: "";
         display: block;
         height: 183px;
     }
-    header a{
-        color:#D4D1ED;
+
+    header a {
+        color: #D4D1ED;
     }
-    header a:hover{
-        color:white;
+
+    header a:hover {
+        color: white;
     }
-    .header-content,.footer-content{
-        margin:auto;
+
+    .header-content, .footer-content {
+        margin: auto;
         max-width: 1080px;
     }
-    .header-links{
+
+    .header-links {
         display: flex;
         flex-direction: row;
-        width:30%;
+        width: 30%;
         justify-content: space-between;
     }
-    .desktop-nav{
-        position:relative;
-        transform:none;
+
+    .desktop-nav {
+        position: relative;
+        transform: none;
         background-color: #F4F3FF;
         padding: 1rem 2rem;
 
     }
-    .nav-lst-container{
+
+    .nav-lst-container {
         max-width: 1080px;
-        margin:auto;
+        margin: auto;
         display: flex;
         justify-content: space-between;
     }
-    .general-links, .personal-links{
+
+    .general-links {
         display: flex;
         justify-content: space-between;
         width: 30%;
+        align-items: center;
         flex-direction: row;
     }
 
-    .desktop-nav a{
-        color:#262262;
+    .personal-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .personal-links li {
+        list-style: none;
+    }
+
+    .desktop-nav a {
+        color: #262262;
         text-decoration: none;
     }
-    .desktop-nav a:hover{
+
+    .desktop-nav a:hover {
         text-decoration: underline;
-        color:black;
+        color: black;
     }
-    .center-block, .center-header{
+
+    .center-block, .center-header {
         max-width: 600px;
     }
-    .news_sec{
+
+    .news_sec {
         max-width: 1080px;
         width: 90%;
-        margin:auto;
+        margin: auto;
     }
-    #news_header{
+
+    #news_header {
         max-width: 1080px;
-        width:90%;
+        width: 90%;
         margin: 2rem 0;
     }
-    .news-container{
+
+    .news-container {
         display: flex;
         justify-content: space-between;
     }
-    .news{
+
+    .news {
         max-width: 30%;
-        margin:2rem 0;
+        margin: 2rem 0;
     }
-    .footer-content{
+
+    .footer-content {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
     }
-    footer{
-        position:absolute;
+
+    footer {
+        position: absolute;
         bottom: 0;
         width: 100%;
         height: 153.6px;
