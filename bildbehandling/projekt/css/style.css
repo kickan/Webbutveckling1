@@ -11,6 +11,7 @@
 html {
     font-size: 62.5%;
     background-color: white;
+    height: 100%;
 }
 
 * {
@@ -59,6 +60,17 @@ p, button, a, li, label, input {
 
 body {
     overflow-x: hidden;
+    min-height: 100%;
+
+    display: grid;
+    grid: 125.817px auto 166.7px/ auto;
+}
+#prodpage{
+    display:block;
+}
+
+.content{
+
 }
 
 /*  HEADER
@@ -72,6 +84,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: auto;
+
 }
 
 .logo {
@@ -86,12 +100,14 @@ header {
 
 /*  MOBILE NAV
     -----------*/
+
 .mob-nav {
     background-color: #241B15;
     position: absolute;
+    top:125.817px;
     z-index: 100;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     text-align: center;
     transform: translateX(-100%);
     transition: transform 300ms cubic-bezier(.5, 0, .5, 1)
@@ -125,6 +141,7 @@ footer {
     background-color: #FF3F03;
     color: #241B15;
     padding: 2rem;
+    margin-top: auto;
 }
 
 /*  MAIN-CONTENT
@@ -148,11 +165,20 @@ footer {
 .cat-card__container {
     margin: 2rem auto;
 }
+.cat-card__container a{
+    color: #241B15;
+    text-decoration: none;
+}
+
 
 .cat-card {
     background-color: #FBEBEF;
     padding: 3rem 2rem;
     border: 2px solid #241B15;
+    transition: transform 300ms;
+}
+.cat-card:hover{
+    transform: translate(-3px, 3px);
 }
 
 .cat-card__img {
@@ -187,6 +213,10 @@ footer {
     background-color: #FBEBEF;
     color: #241B15;
     margin: 2rem 0;
+}
+
+.text-cont--light p{
+    margin: 1rem;
 }
 
 /*  Total amount section
@@ -398,6 +428,13 @@ footer {
 
     .mob-cont {
         display: none;
+    }
+    body{
+        grid: 105.817px auto 181.45px /auto;
+    }
+    #prodpage{
+        display: grid;
+        grid: 105.817px auto 181.45px /auto;
     }
 
     /*  FONTS

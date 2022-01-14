@@ -28,78 +28,90 @@
         <a href="index.html"><img src="img/logga.png" alt="Torii shop" class="logo"></a>
         <a href="bag.html"><img src="img/icons/basket_logo.svg" alt="" class="basket-logo"></a>
     </header>
-    <nav class="mob-nav mob-cont">
-        <ul class="mob-nav__list">
-            <li><a href="index.html">Startsidan</a></li>
-            <li><a href="books.html">Böcker</a></li>
-            <li><a href="pins.html">Pins</a></li>
-            <li><a href="div.html">Diverse</a></li>
-            <li><a href="about.html">Om</a></li>
-        </ul>
-    </nav>
-    <h1 class="main-content page-title">En port till Japan</h1>
-    <picture>
-        <source srcset="img/cover_geisha_small.webp" media="(max-width:800px)" type="image/webp">
-        <source srcset="img/cover_geisha_small.jpg" media="(max-width:800px)" type="image/jpg">
-        <source srcset="img/cover_geisha_big.webp" media="(min-width:801px)" type="image/webp">
-        <img src="img/cover_geisha_big.jpg" alt="En Geisha promenerar på gatan i Japan" class="coverimg">
-    </picture>
-    <div class="main-content">
-        <section class="cat-card__container">
-            <section class="cat-card">
-                <picture>
-                    <source srcset="img/cat_books_big.webp" type="image/webp">
-                    <img src="img/cat_books_big.png" alt="" class="cat-card__img">
-                </picture>
-                <h2>Böcker</h2>
-            </section>
-            <section class="cat-card desk-cont">
-                <picture>
-                    <source srcset="img/cat_pins_big.webp" type="image/webp">
-                    <img src="img/cat_pins_big.png" alt="" class="cat-card__img">
-                </picture>
+    <div class="content">
+        <nav class="mob-nav mob-cont">
+            <ul class="mob-nav__list">
+                <li><a href="index.html">Startsidan</a></li>
+                <li><a href="books.html">Böcker</a></li>
+                <li><a href="pins.html">Pins</a></li>
+                <li><a href="div.html">Diverse</a></li>
+                <li><a href="about.html">Om</a></li>
+            </ul>
+        </nav>
+        <h1 class="main-content page-title">En port till Japan</h1>
+        <picture>
+            <source srcset="img/cover_geisha_small.webp" media="(max-width:800px)" type="image/webp">
+            <source srcset="img/cover_geisha_small.jpg" media="(max-width:800px)" type="image/jpg">
+            <source srcset="img/cover_geisha_big.webp" media="(min-width:801px)" type="image/webp">
+            <img src="img/cover_geisha_big.jpg" alt="En Geisha promenerar på gatan i Japan" class="coverimg">
+        </picture>
+        <div class="main-content">
+            <section class="cat-card__container">
+                <a href="books.html">
+                    <section class="cat-card">
+                        <picture>
+                            <source srcset="img/cat_books_big.webp" type="image/webp">
+                            <img src="img/cat_books_big.png" alt="" class="cat-card__img">
+                        </picture>
+                        <h2>Böcker</h2>
+                    </section>
+                </a>
+                <a href="pins.html">
+                    <section class="cat-card desk-cont">
+                        <picture>
+                            <source srcset="img/cat_pins_big.webp" type="image/webp">
+                            <img src="img/cat_pins_big.png" alt="" class="cat-card__img">
+                        </picture>
 
-                <h2>Pins</h2>
-            </section>
-            <section class="cat-card desk-cont">
-                <picture>
-                    <source srcset="img/cat_div_big.webp" type="image/webp">
-                    <img src="img/cat_div_big.png" alt="" class="cat-card__img">
-                </picture>
+                        <h2>Pins</h2>
+                    </section>
+                </a>
+                <a href="div.html">
+                    <section class="cat-card desk-cont">
+                        <picture>
+                            <source srcset="img/cat_div_big.webp" type="image/webp">
+                            <img src="img/cat_div_big.png" alt="" class="cat-card__img">
+                        </picture>
 
-                <h2>Diverse</h2>
+                        <h2>Diverse</h2>
+                    </section>
+                </a>
             </section>
-        </section>
-        <h2>Utvalda produkter</h2>
-        <section class="prod-card__cont">
-            <section class="prod-card">
-                <img src="img/prod_totoro01_med.png" alt="" class="prod-card__img">
-                <h3>Virkad Totoro</h3>
-                <p>200 kr</p>
+            <h2>Utvalda produkter</h2>
+            <section class="prod-card__cont">
+                <section class="prod-card" id="totoro"
+                    data-special="Virkad Totoro i turkost bomullsgarn. Höjd 34 cm.&200&Virkad Totoro&3">
+                    <img src="img/prod_totoro01_med.png" alt="produktbild" class="prod-card__img">
+                    <h3>Virkad Totoro</h3>
+                    <p>200 kr</p>
+                </section>
+                <section class="prod-card" id="bakemono"
+                    data-special="Suddigum föreställande Bakemono. Säljs i 4-pack.&50&Suddigum Bakemono&3">
+                    <img src="img/prod_bakemono01_med.png" alt="" class="prod-card__img">
+                    <h3>Suddigum Bakemono</h3>
+                    <p>50 kr</p>
+                </section>
+                <section class="prod-card desk-cont" id="owl"
+                    data-special="Portmonä i Uggleformat. Passar bra till barn som vill ha hand om sina egna pengar.&150&Portmonä Uggla&3">
+                    <img src="img/prod_owl01_med.png" alt="" class="prod-card__img">
+                    <h3>Portmonä Uggla</h3>
+                    <p>150 kr</p>
+                </section>
+                <section class="prod-card desk-cont" id="sock"
+                    data-special="Tå-strumpa med roligt motiv. Onesize fits all.&200&Tå-strumpa&2">
+                    <img src="img/prod_sock01_med.png" alt="" class="prod-card__img">
+                    <h3>Tå-strumpa</h3>
+                    <p>200 kr</p>
+                </section>
             </section>
-            <section class="prod-card">
-                <img src="img/prod_bakemono01_med.png" alt="" class="prod-card__img">
-                <h3>Suddigum Bakemono</h3>
-                <p>50 kr</p>
-            </section>
-            <section class="prod-card desk-cont">
-                <img src="img/prod_owl01_med.png" alt="" class="prod-card__img">
-                <h3>Portmonä Uggla</h3>
-                <p>150 kr</p>
-            </section>
-            <section class="prod-card desk-cont">
-                <img src="img/prod_sock01_med.png" alt="" class="prod-card__img">
-                <h3>Tå-strumpa</h3>
-                <p>200 kr</p>
-            </section>
+        </div>
+        <section class="text-cont--dark">
+            <h2>Torii Shop</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis necessitatibus sapiente assumenda sint
+                sunt obcaecati culpa vitae, officia repellendus ex adipisci architecto voluptate voluptatem error dolor
+            </p>
         </section>
     </div>
-    <section class="text-cont--dark">
-        <h2>Torii Shop</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis necessitatibus sapiente assumenda sint
-            sunt obcaecati culpa vitae, officia repellendus ex adipisci architecto voluptate voluptatem error dolor
-        </p>
-    </section>
     <footer>
         <h2>Kontakt</h2>
         <p>E-post: info@toriishop.se</p>
