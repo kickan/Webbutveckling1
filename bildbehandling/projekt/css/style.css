@@ -65,13 +65,12 @@ body {
     display: grid;
     grid: 125.817px auto 166.7px/ auto;
 }
-#prodpage{
-    display:block;
+
+#prodpage {
+    display: block;
 }
 
-.content{
-
-}
+.content {}
 
 /*  HEADER
     -------*/
@@ -90,12 +89,11 @@ header {
 
 .logo {
     max-width: 100px;
-    /*<--------------------------------------------------kan ändra sen*/
+
 }
 
 .basket-logo {
     width: 30px;
-    /*<--------------------------------------------------kan ändra sen*/
 }
 
 /*  MOBILE NAV
@@ -104,7 +102,7 @@ header {
 .mob-nav {
     background-color: #241B15;
     position: absolute;
-    top:125.817px;
+    top: 125.817px;
     z-index: 100;
     width: 100%;
     min-height: 100vh;
@@ -156,7 +154,6 @@ footer {
 
 .coverimg {
     max-width: 100%;
-    /*<-----------------------------------------------------------------------------------------Kan ändras sen*/
     margin: 1rem auto;
 }
 
@@ -165,7 +162,8 @@ footer {
 .cat-card__container {
     margin: 2rem auto;
 }
-.cat-card__container a{
+
+.cat-card__container a {
     color: #241B15;
     text-decoration: none;
 }
@@ -177,7 +175,8 @@ footer {
     border: 2px solid #241B15;
     transition: transform 300ms;
 }
-.cat-card:hover{
+
+.cat-card:hover {
     transform: translate(-3px, 3px);
 }
 
@@ -215,7 +214,7 @@ footer {
     margin: 2rem 0;
 }
 
-.text-cont--light p{
+.text-cont--light p {
     margin: 1rem;
 }
 
@@ -306,15 +305,16 @@ footer {
     transition: translate 500ms;
 }
 
-.prod-card:hover{
+.prod-card:hover {
     cursor: pointer;
-    transform: translate(2px,2px);
+    transform: translate(2px, 2px);
 }
 
 .prod-card--full {
     padding: 3rem;
 }
-.prod-card--full h1{
+
+.prod-card--full h1 {
     font-size: 2.4rem;
 }
 
@@ -323,8 +323,6 @@ footer {
     display: block;
     max-width: 100%;
 }
-
-/*<---------------------------------------------------------------------------------------kan ändra sen*/
 
 /*  PRODUCT CARD BAG
     -----------------*/
@@ -344,8 +342,7 @@ footer {
 }
 
 .bag__prod-card__img {
-    width: 100px;
-    /*<------------------------------------------------------------------kan ändra sen*/
+    max-width: 100px;
 }
 
 .trashcan {
@@ -373,6 +370,26 @@ footer {
     transform: translate(1px, 1px);
 }
 
+/*  BUY FORM
+    --------*/
+.pay-form {
+    margin: 2rem auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
+
+.pay-form input[type="text"] {
+    width: 100%;
+}
+
+.pay-form__cont {
+    max-width: 800px;
+}
+
+
+
 /*  OTHER
     ------*/
 .img-text-cont {
@@ -382,21 +399,22 @@ footer {
     margin: 2rem;
 }
 
-.prev img, .next img{
+.prev img, .next img {
     width: 40px;
     position: absolute;
     top: 50%;
 }
 
-.prev img{
-    left:0;
+.prev img {
+    left: 0;
 }
-.next img{
+
+.next img {
     right: 0;
 }
 
 
-.prev, .next{
+.prev, .next {
     width: 50%;
     height: 100%;
     vertical-align: middle;
@@ -404,7 +422,7 @@ footer {
     transition: opacity 400ms linear;
 }
 
-.prev:hover, .next:hover{
+.prev:hover, .next:hover {
     opacity: 100;
 }
 
@@ -429,10 +447,12 @@ footer {
     .mob-cont {
         display: none;
     }
-    body{
+
+    body {
         grid: 105.817px auto 181.45px /auto;
     }
-    #prodpage{
+
+    #prodpage {
         display: grid;
         grid: 105.817px auto 181.45px /auto;
     }
@@ -520,10 +540,12 @@ footer {
         max-width: 800px;
         margin: 2rem auto;
     }
-    .text-cont--light{
+
+    .text-cont--light {
         max-width: 500px;
         margin: 2rem auto;
-    } 
+    }
+
     .text-cont--pink {
         max-width: 1080px;
         margin: 2rem auto;
@@ -557,9 +579,15 @@ footer {
         margin-right: auto;
     }
 
-    .prod-card--full__content{
+    .prod-card--full__content {
         max-width: 500px;
-        margin:auto;
+        margin: auto;
+    }
+
+    /*  PAY FORMS
+        ----------*/
+    .pay-form__cont {
+        max-width: 1080px;
     }
 
     /*  BUTTONS

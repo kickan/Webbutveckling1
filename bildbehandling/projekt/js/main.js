@@ -27,6 +27,9 @@ function runFuncs() {
         case "catpage":
             prodFunc();
             break;
+        case "bag":
+            payFunc();
+            break;
     }
 }
 
@@ -83,3 +86,11 @@ function openProdPage(e) {
     location.href = "prodpage.html?" + data;
 }
 
+function payFunc(){
+    let toPayBtn = document.getElementById("to-pay-btn");
+    let form = document. getElementById("pay-form")
+    toPayBtn.addEventListener("click", () => {
+        toPayBtn.style.display="none";
+        form.style.display="block";
+    })
+}

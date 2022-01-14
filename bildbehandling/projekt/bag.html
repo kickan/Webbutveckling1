@@ -41,7 +41,7 @@
         </header>
         <h1 class="main-content page-title">Din Kundkorg</h1>
         <section class="bag__prod-card">
-            <img src="img/totoro01.png" alt="" class="bag__prod-card__img">
+            <img src="img/prod_totoro01_small.png" alt="produktbild" class="bag__prod-card__img">
             <div class="bag__prod-card__info">
                 <h2>Virkad Totoro</h2>
                 <label for="quantity">Antal: </label>
@@ -51,19 +51,34 @@
             <img src="img/icons/trashcan.svg" alt="" class="trashcan">
         </section>
         <section class="bag__prod-card">
-            <img src="img/totoro01.png" alt="" class="bag__prod-card__img">
+            <img src="img/prod_pinplay01_small.png" alt="" class="bag__prod-card__img">
             <div class="bag__prod-card__info">
-                <h2>Virkad Totoro</h2>
+                <h2>Lekande ödla Pin</h2>
                 <label for="quantity">Antal: </label>
-                <input type="number" id="quantity" value="1" min="1" max="10">
-                <p>200 kr</p>
+                <input type="number" id="quantity" value="2" min="1" max="10">
+                <p>50 kr</p>
             </div>
             <img src="img/icons/trashcan.svg" alt="" class="trashcan">
         </section>
         <section class="amount-cont">
-            <p>Totalbelopp: 300 kr</p>
+            <p>Totalbelopp: 250 kr</p>
         </section>
-        <button class="btn--dark">Till betalning</button>
+        <button class="btn--dark" id="to-pay-btn">Till betalning</button>
+        <form class="pay-form" id="pay-form">
+            <div class="pay-form__cont">
+            <label for="name">Namn: </label><br>
+            <input type="text" id="name" placeholder="Förnamn Efternamn"> <br>
+            <label for="adress">Adress: </label><br>
+            <input type="text" id="adress"> <br>
+            <label for="postnr">Postnummer: </label><br>
+            <input type="text" id="postnr"> <br>
+            <label for="ort">Ort: </label><br>
+            <input type="text" id="ort"><br>
+            <input type="checkbox" id="buystandards">
+            <label for="buystandards">Jag accepterar köpvillkoren</label>
+            <button class="btn--dark" id="pay-btn">Betala</button>
+        </div>
+        </form>
         <section class="text-cont--pink">
             <div class="img-text-cont">
                 <img src="img/icons/arrow.svg" alt="">
