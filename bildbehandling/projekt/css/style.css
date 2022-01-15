@@ -1,6 +1,59 @@
 /*Mobile first*/
 
+/* Normaliserar stilen mellan olika webbläsare med filen normalize (ej skrivit denna kod själv, se fil för källa)*/
 @import url(normalize.css);
+
+
+/* Tabel of content
+
+    ------Mobile-------
+    *Global settings*
+        -General
+        -Fonts
+        -Body
+        -Mobile
+    *Sections*
+        -Header
+        -Mobile nav
+        -Open Menu mobile
+        -Footer
+        -Main content
+        -Category section
+        -Product section
+        -Text section
+        -Total amount section
+        -Prod page
+    *Components*
+        -Hamburger Menu
+            button
+            lines
+            transformation
+        -Page title
+        -Product card
+        -Product card bag
+        -Buttons
+        -Buy form
+        -Other
+
+    ------Desktop--------
+    *Global settings*
+        -Desktop
+    *Sections*
+        -Header
+        -Nav
+        -Main content
+        -Category container
+        -Product container
+        -Text section
+    *Components*
+        -cover img
+        -Product cards
+        -Buttons
+        -Other
+*/
+
+
+
 
 /*  ===============
     Global settings
@@ -48,6 +101,17 @@ p, button, a, li, label, input {
     line-height: 3rem;
 }
 
+/*  Body
+    -----*/
+body {
+    overflow-x: hidden;
+    min-height: 100%;
+
+    display: grid;
+    grid: 125.817px auto 166.7px/ auto;
+}
+
+
 /*  MOBILE
     -------*/
 .desk-cont {
@@ -58,19 +122,7 @@ p, button, a, li, label, input {
     Sections
     =============== */
 
-body {
-    overflow-x: hidden;
-    min-height: 100%;
 
-    display: grid;
-    grid: 125.817px auto 166.7px/ auto;
-}
-
-#prodpage {
-    display: block;
-}
-
-.content {}
 
 /*  HEADER
     -------*/
@@ -227,6 +279,13 @@ footer {
     border-bottom: 1px solid #241B15;
     margin-top: 2rem;
     padding: 3rem;
+}
+
+/*  PROD PAGE
+    ----------*/
+
+#prodpage {
+    display: block;
 }
 
 /*  ===============
@@ -386,7 +445,7 @@ footer {
 
 .pay-form__cont {
     max-width: 800px;
-    margin:2rem auto;
+    margin: 2rem auto;
 }
 
 
@@ -426,7 +485,8 @@ footer {
 .prev:hover, .next:hover {
     opacity: 1;
 }
-.videodiv__cont{
+
+.videodiv__cont {
     max-width: 500px;
     margin: 2rem auto;
 }
@@ -476,9 +536,6 @@ footer {
         display: grid;
         grid: 105.817px auto 181.45px /auto;
     }
-
-    /*  FONTS
-        ------*/
 
 
     /*  =============

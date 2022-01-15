@@ -1,6 +1,7 @@
 "use strict";
 
 
+//Inital function when window load
 function init() {
 
     //Mobile menue bar
@@ -8,12 +9,15 @@ function init() {
     menuBtn.addEventListener("click", () => {
         document.body.classList.toggle("nav-open");
     })
+
+    //run functions depending on page
     runFuncs();
 
 }
 
 window.addEventListener("load", init);
 
+//Depending on which page is loaded different functions will be called
 function runFuncs() {
     let page = document.body.id;
     switch (page) {
@@ -33,6 +37,27 @@ function runFuncs() {
     }
 }
 
+//------------category pages and index------------------
+
+//When click on product card run openProdPage
+function prodFunc() {
+    let products = document.getElementsByClassName("prod-card");
+    for (let i = 0; i < products.length; i++) {
+        products[i].addEventListener("click", openProdPage);
+    }
+}
+
+//Go to product page and add product information to URL
+function openProdPage(e) {
+    let productInfo = this.id + "&" + this.getAttribute("data-special");
+    console.log(productInfo);
+    let data = encodeURIComponent(productInfo);
+    location.href = "prodpage.html?" + data;
+}
+
+//-------------product page-----------------------------
+
+//Get product information from URL and add on product page to elements
 function addProdInfo() {
     let prod = decodeURIComponent(location.search.substring(1)); //Get param from url excluding "?"
     let prodInfoArr = prod.split("&");
@@ -44,6 +69,7 @@ function addProdInfo() {
     }
 }
 
+//Add product pictures to product page
 function addPics(numPics, prodName) {
     let slideArea = document.querySelector(".slide-area");
     for (let i = 1; i <= parseInt(numPics); i++) {
@@ -71,6 +97,7 @@ function addPics(numPics, prodName) {
     }
 }
 
+//Product image slider on product page
 function slideFunc() {
     $(".prod-slide").jdSlider({
         wrap: '.slide-inner',
@@ -79,21 +106,8 @@ function slideFunc() {
     })
 }
 
-function prodFunc() {
-    let products = document.getElementsByClassName("prod-card");
-    for (let i = 0; i < products.length; i++) {
-        products[i].addEventListener("click", openProdPage);
-    }
-}
-
-
-function openProdPage(e) {
-    let productInfo = this.id + "&" + this.getAttribute("data-special");
-    console.log(productInfo);
-    let data = encodeURIComponent(productInfo);
-    location.href = "prodpage.html?" + data;
-}
-
+//-----------bag.html--------------
+//Show form after click on go to payment on
 function payFunc(){
     let toPayBtn = document.getElementById("to-pay-btn");
     let form = document. getElementById("pay-form")
